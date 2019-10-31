@@ -1,0 +1,87 @@
+
+@mixin fontSize1($sizeValue) {
+    font-family: 'Pacifico', cursive;
+    font-size: $sizeValue;
+    color: $primaryColour;
+}
+@mixin fontSize2($sizeValue) {
+    font-family: 'Lato', sans-serif;
+    font-size: $sizeValue;
+    color: $primaryColour;
+}
+@mixin fontSize3($sizeValue) {
+    font-family: 'Lato', sans-serif;
+    font-size: $sizeValue;
+    font-weight: '700';
+}
+html {
+    font-size: 62.5%;
+}
+h1 {
+    @include fontSize1(6.8rem);
+    line-height: 64px;
+}
+h2 {
+    @include fontSize1(5.8rem);
+    line-height: 68px;
+}
+h3 {
+    @include fontSize1(4.3rem);
+    line-height: 58px;
+    letter-spacing: 2.7px;
+}
+h4 {
+    @include fontSize1(4rem);
+    letter-spacing: 4.3px;
+}
+h5 {
+    @include fontSize1(4rem);
+    text-align: right;
+    line-height: 58px;
+    letter-spacing: 2.5px;
+}
+h6 {
+    @include fontSize1(3.5rem);
+    letter-spacing: 2.9px;
+}
+nav {
+    @include fontSize3(2rem);
+    text-align: center;
+    line-height: 29px;
+    letter-spacing: 1.4px;
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+}
+p {
+    @include fontSize2(2rem);
+    line-height: 28px;
+    letter-spacing: 2px;
+}
+button {
+    @include fontSize1(2.7rem);
+    text-align: center;
+    line-height: 32px;
+    letter-spacing: 1.4px;
+}
+img {
+    width: 100%;
+    display: block;
+}
+.logo {
+    @include fontSize1(3rem);
+    line-height: 24px;
+    letter-spacing: 1.7px;
+}
+.wrapper {
+    max-width: 1080px;
+    margin: 0 auto;
+    border: 1px solid tomato;
+}

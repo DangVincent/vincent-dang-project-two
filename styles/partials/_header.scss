@@ -1,0 +1,19 @@
+.homeHeader {
+    background: url(../../assets/header-home.jpg) bottom right no-repeat fixed;
+    background-size: cover;
+    min-height: 700px;
+    padding: 1px; 
+}
+.contactHeader {
+    background: url(../../assets/contact-header.jpg) top right no-repeat fixed;
+    background-size: cover;
+    min-height: 700px;
+    padding: 1px; 
+}
+
+.blogHeader {
+    background: url(../../assets/blog-header.jpg) right no-repeat;
+    background-size: contain;
+    min-height: 450px;
+    padding: 1px; 
+}

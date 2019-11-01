@@ -3,29 +3,27 @@
     background: url(../../assets/header-home.jpg) bottom right no-repeat fixed;
     background-size: cover;
     min-height: 700px;
-    padding: 1px; 
 }
 //Home Header styles ends here
 //Contact Header styles starts here
 .contactHeader {
-    background: url(../../assets/contact-header.jpg) top right no-repeat fixed;
+    background: url(../../assets/contact-header.jpg) center right no-repeat;
     background-size: cover;
-    min-height: 500px;
-    padding: 1px;
+    min-height: 400px;
 }
 //Contact Header styles ends here
 //Blog Header styles starts here
 .blogHeader {
     background: url(../../assets/blog-header.jpg) right no-repeat;
     background-size: contain;
-    min-height: 450px;
-    padding: 1px; 
+    min-height: 450px; 
 }
 //Blog Header styles ends here
 //General styles for all headers starts here
 .blogHeader,
 .contactHeader,
 .homeHeader {
+    padding-top: 20px;
     .wrapper {
         
         display: flex;
@@ -36,7 +34,7 @@
             justify-content: space-between;
             .logo {
                 flex: 2 0 auto;
-                width: 50%;
+                width: 63%;
                 a {
                     color: $primaryColour;
                     transition: color 0.3s;
@@ -46,7 +44,7 @@
                 }
             }
             ul {
-                width: 50%;
+                width: 37%;
                 display: flex;
                 justify-content: space-between;
                 .hLink {

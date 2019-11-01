@@ -9,12 +9,102 @@
 //Contact Main styles starts here
 .contactMain {
     background: $tertiaryColour;
-    display: flex;
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
     .customerService {
-        width: 80%;
+        width: 75%;
+        background: $primaryColour;
+        padding: 35px 50px;
+        border: 1px solid tomato;
+        position: relative;
+        box-shadow: 20px 20px $secondaryColour;
+        bottom: 120px;
+        right: 55px;
+        form {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .name {
+            padding: 20px 0 15px 20px;
+            width: 45%;
+            background: none;
+            border: none;
+            border-bottom: 1px solid $secondaryColour;
+            color: $accentColour;
+            transition: opacity 0.3s;
+            &:hover {
+                border-bottom: 1px solid $tertiaryColour;
+                opacity: 0.5;
+            }
+            &:focus {
+                border-bottom: 1px solid $secondaryColour;
+                color: $accentColour;
+            }
+        }
+        .emailAddress {
+            @extend .name;
+        }
+        .message {
+            resize: none;
+            margin-top: 30px;
+            padding: 20px 0 15px 20px;
+            width: 100%;
+            color: $accentColour;
+            background: none;
+            border: 1px solid $secondaryColour;
+            transition: opacity 0.3s;
+            &:hover {
+                border-bottom: 1px solid $tertiaryColour;
+                opacity: 0.5;
+            }
+            &:focus {
+                border-bottom: 1px solid $secondaryColour;
+                color: $accentColour;
+            }
+        }
+        .submit {
+            @include fontSize1(1rem);
+            margin-top: 30px;
+            background: $accentColour;
+            width: 100%;
+            border: none;
+            transition: text-shadow 0.8s, background 0.3s;
+            &:hover {
+                text-shadow: 2px 1px 1px $secondaryColour;
+                background: $tertiaryColour;
+            }
+        }
     }
     .contactInfo {
         width: 20%;
+        align-self: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border: 1px solid tomato;
+        ul {
+            display: flex;
+            justify-content: space-between;
+            width: 60%;
+        }
+        a {
+            color: $primaryColour;
+            &:hover {
+                text-shadow: 2px 2px 1px $secondaryColour;
+            }
+        }
+        p {
+            margin: 0;
+            line-height: 18px;
+            @include fontSize2(0.7rem);
+            &:nth-of-type(1) {
+                margin: 10px 0;
+            }
+        }
     }
 }
 //Contact Main styles ends here

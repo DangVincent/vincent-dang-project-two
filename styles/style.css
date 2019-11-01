@@ -151,7 +151,7 @@ html {
 h1 {
   font-family: 'Pacifico', cursive;
   font-size: 3.4rem;
-  color: #1A315C;
+  color: #21404f;
   line-height: 64px;
   -webkit-box-flex: 2;
   -ms-flex: 2 0 auto;
@@ -160,7 +160,7 @@ h1 {
 h2 {
   font-family: 'Pacifico', cursive;
   font-size: 2.9rem;
-  color: #1A315C;
+  color: #21404f;
   line-height: 68px;
   -webkit-box-flex: 2;
   -ms-flex: 2 0 auto;
@@ -169,20 +169,20 @@ h2 {
 h3 {
   font-family: 'Pacifico', cursive;
   font-size: 2.15rem;
-  color: #1A315C;
+  color: #21404f;
   line-height: 58px;
   letter-spacing: 2.7px; }
 
 h4 {
   font-family: 'Pacifico', cursive;
   font-size: 2rem;
-  color: #1A315C;
+  color: #21404f;
   letter-spacing: 4.3px; }
 
 h5 {
   font-family: 'Pacifico', cursive;
   font-size: 2rem;
-  color: #1A315C;
+  color: #21404f;
   text-align: right;
   line-height: 58px;
   letter-spacing: 2.5px; }
@@ -190,7 +190,7 @@ h5 {
 h6 {
   font-family: 'Pacifico', cursive;
   font-size: 1.75rem;
-  color: #1A315C;
+  color: #21404f;
   letter-spacing: 2.9px; }
 
 nav {
@@ -214,14 +214,14 @@ a {
 p {
   font-family: 'Lato', sans-serif;
   font-size: 1rem;
-  color: #1A315C;
+  color: #21404f;
   line-height: 28px;
   letter-spacing: 2px; }
 
 button {
   font-family: 'Pacifico', cursive;
   font-size: 1.35rem;
-  color: #1A315C;
+  color: #21404f;
   text-align: center;
   line-height: 32px;
   letter-spacing: 1.4px; }
@@ -233,7 +233,7 @@ img {
 .logo {
   font-family: 'Pacifico', cursive;
   font-size: 1.5rem;
-  color: #1A315C;
+  color: #21404f;
   line-height: 24px;
   letter-spacing: 1.7px;
   text-align: left;
@@ -247,84 +247,85 @@ img {
 .homeHeader {
   background: url(../../assets/header-home.jpg) bottom right no-repeat fixed;
   background-size: cover;
-  min-height: 700px;
-  padding: 1px; }
+  min-height: 700px; }
 
 .contactHeader {
-  background: url(../../assets/contact-header.jpg) top right no-repeat fixed;
+  background: url(../../assets/contact-header.jpg) center right no-repeat;
   background-size: cover;
-  min-height: 500px;
-  padding: 1px; }
+  min-height: 400px; }
 
 .blogHeader {
   background: url(../../assets/blog-header.jpg) right no-repeat;
   background-size: contain;
-  min-height: 450px;
-  padding: 1px; }
+  min-height: 450px; }
 
-.blogHeader .wrapper,
-.contactHeader .wrapper,
-.homeHeader .wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column; }
-  .blogHeader .wrapper .headerLinks,
-  .contactHeader .wrapper .headerLinks,
-  .homeHeader .wrapper .headerLinks {
+.blogHeader,
+.contactHeader,
+.homeHeader {
+  padding-top: 20px; }
+  .blogHeader .wrapper,
+  .contactHeader .wrapper,
+  .homeHeader .wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between; }
-    .blogHeader .wrapper .headerLinks .logo,
-    .contactHeader .wrapper .headerLinks .logo,
-    .homeHeader .wrapper .headerLinks .logo {
-      -webkit-box-flex: 2;
-      -ms-flex: 2 0 auto;
-      flex: 2 0 auto;
-      width: 50%; }
-      .blogHeader .wrapper .headerLinks .logo a,
-      .contactHeader .wrapper .headerLinks .logo a,
-      .homeHeader .wrapper .headerLinks .logo a {
-        color: #1A315C;
-        -webkit-transition: color 0.3s;
-        -o-transition: color 0.3s;
-        transition: color 0.3s; }
-        .blogHeader .wrapper .headerLinks .logo a:hover,
-        .contactHeader .wrapper .headerLinks .logo a:hover,
-        .homeHeader .wrapper .headerLinks .logo a:hover {
-          color: #0CADC0; }
-    .blogHeader .wrapper .headerLinks ul,
-    .contactHeader .wrapper .headerLinks ul,
-    .homeHeader .wrapper .headerLinks ul {
-      width: 50%;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    .blogHeader .wrapper .headerLinks,
+    .contactHeader .wrapper .headerLinks,
+    .homeHeader .wrapper .headerLinks {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
       -webkit-box-pack: justify;
       -ms-flex-pack: justify;
       justify-content: space-between; }
-      .blogHeader .wrapper .headerLinks ul .hLink,
-      .contactHeader .wrapper .headerLinks ul .hLink,
-      .homeHeader .wrapper .headerLinks ul .hLink {
-        text-transform: uppercase;
-        color: #1A315C;
-        -webkit-transition: text-shadow 0.3s;
-        -o-transition: text-shadow 0.3s;
-        transition: text-shadow 0.3s; }
-        .blogHeader .wrapper .headerLinks ul .hLink:hover,
-        .contactHeader .wrapper .headerLinks ul .hLink:hover,
-        .homeHeader .wrapper .headerLinks ul .hLink:hover {
-          padding-bottom: 5px;
-          text-shadow: 1px 2px 1px #0CADC0;
-          border-bottom: 2px solid #0CADC0; }
+      .blogHeader .wrapper .headerLinks .logo,
+      .contactHeader .wrapper .headerLinks .logo,
+      .homeHeader .wrapper .headerLinks .logo {
+        -webkit-box-flex: 2;
+        -ms-flex: 2 0 auto;
+        flex: 2 0 auto;
+        width: 63%; }
+        .blogHeader .wrapper .headerLinks .logo a,
+        .contactHeader .wrapper .headerLinks .logo a,
+        .homeHeader .wrapper .headerLinks .logo a {
+          color: #21404f;
+          -webkit-transition: color 0.3s;
+          -o-transition: color 0.3s;
+          transition: color 0.3s; }
+          .blogHeader .wrapper .headerLinks .logo a:hover,
+          .contactHeader .wrapper .headerLinks .logo a:hover,
+          .homeHeader .wrapper .headerLinks .logo a:hover {
+            color: #0CADC0; }
+      .blogHeader .wrapper .headerLinks ul,
+      .contactHeader .wrapper .headerLinks ul,
+      .homeHeader .wrapper .headerLinks ul {
+        width: 37%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between; }
+        .blogHeader .wrapper .headerLinks ul .hLink,
+        .contactHeader .wrapper .headerLinks ul .hLink,
+        .homeHeader .wrapper .headerLinks ul .hLink {
+          text-transform: uppercase;
+          color: #21404f;
+          -webkit-transition: text-shadow 0.3s;
+          -o-transition: text-shadow 0.3s;
+          transition: text-shadow 0.3s; }
+          .blogHeader .wrapper .headerLinks ul .hLink:hover,
+          .contactHeader .wrapper .headerLinks ul .hLink:hover,
+          .homeHeader .wrapper .headerLinks ul .hLink:hover {
+            padding-bottom: 5px;
+            text-shadow: 1px 2px 1px #0CADC0;
+            border-bottom: 2px solid #0CADC0; }
 
 .bannerContent {
   background: url(../../assets/banner.jpg) center no-repeat;
@@ -333,23 +334,126 @@ img {
   padding: 1px; }
 
 .contactMain {
-  background: #CCEDFB;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
+  background: #CCEDFB; }
+  .contactMain .wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
   .contactMain .customerService {
-    width: 80%; }
+    width: 75%;
+    background: #21404f;
+    padding: 35px 50px;
+    border: 1px solid tomato;
+    position: relative;
+    -webkit-box-shadow: 20px 20px #0CADC0;
+    box-shadow: 20px 20px #0CADC0;
+    bottom: 120px;
+    right: 55px; }
+    .contactMain .customerService form {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between; }
+    .contactMain .customerService .name, .contactMain .customerService .emailAddress {
+      padding: 20px 0 15px 20px;
+      width: 45%;
+      background: none;
+      border: none;
+      border-bottom: 1px solid #0CADC0;
+      color: #FFFFFF;
+      -webkit-transition: opacity 0.3s;
+      -o-transition: opacity 0.3s;
+      transition: opacity 0.3s; }
+      .contactMain .customerService .name:hover, .contactMain .customerService .emailAddress:hover {
+        border-bottom: 1px solid #CCEDFB;
+        opacity: 0.5; }
+      .contactMain .customerService .name:focus, .contactMain .customerService .emailAddress:focus {
+        border-bottom: 1px solid #0CADC0;
+        color: #FFFFFF; }
+    .contactMain .customerService .message {
+      resize: none;
+      margin-top: 30px;
+      padding: 20px 0 15px 20px;
+      width: 100%;
+      color: #FFFFFF;
+      background: none;
+      border: 1px solid #0CADC0;
+      -webkit-transition: opacity 0.3s;
+      -o-transition: opacity 0.3s;
+      transition: opacity 0.3s; }
+      .contactMain .customerService .message:hover {
+        border-bottom: 1px solid #CCEDFB;
+        opacity: 0.5; }
+      .contactMain .customerService .message:focus {
+        border-bottom: 1px solid #0CADC0;
+        color: #FFFFFF; }
+    .contactMain .customerService .submit {
+      font-family: 'Pacifico', cursive;
+      font-size: 1rem;
+      color: #21404f;
+      margin-top: 30px;
+      background: #FFFFFF;
+      width: 100%;
+      border: none;
+      -webkit-transition: text-shadow 0.8s, background 0.3s;
+      -o-transition: text-shadow 0.8s, background 0.3s;
+      transition: text-shadow 0.8s, background 0.3s; }
+      .contactMain .customerService .submit:hover {
+        text-shadow: 2px 1px 1px #0CADC0;
+        background: #CCEDFB; }
   .contactMain .contactInfo {
-    width: 20%; }
+    width: 20%;
+    -ms-flex-item-align: center;
+    align-self: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    border: 1px solid tomato; }
+    .contactMain .contactInfo ul {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      width: 60%; }
+    .contactMain .contactInfo a {
+      color: #21404f; }
+      .contactMain .contactInfo a:hover {
+        text-shadow: 2px 2px 1px #0CADC0; }
+    .contactMain .contactInfo p {
+      margin: 0;
+      line-height: 18px;
+      font-family: 'Lato', sans-serif;
+      font-size: 0.7rem;
+      color: #21404f; }
+      .contactMain .contactInfo p:nth-of-type(1) {
+        margin: 10px 0; }
 
 footer {
-  background: #1E1713; }
+  background: #111211; }
   footer .wrapper {
     padding: 5px 0; }
     footer .wrapper p {
       font-family: 'Lato', sans-serif;
       font-size: 1rem;
-      color: #1A315C;
+      color: #21404f;
       margin: 0;
       color: #FFFFFF;
       text-align: center; }

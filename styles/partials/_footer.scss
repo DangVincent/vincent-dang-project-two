@@ -1,0 +1,14 @@
+//Footer styles starts here
+footer {
+    background: $quaternaryColour;
+    .wrapper {
+        padding: 5px 0;
+        p {
+            @include fontSize2(1rem);
+            margin: 0;
+            color: $accentColour;
+            text-align: center;
+        } 
+    }
+}
+//Footer styles ends here

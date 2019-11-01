@@ -1,24 +1,28 @@
+//Home Header styles starts here
 .homeHeader {
     background: url(../../assets/header-home.jpg) bottom right no-repeat fixed;
     background-size: cover;
     min-height: 700px;
     padding: 1px; 
 }
+//Home Header styles ends here
+//Contact Header styles starts here
 .contactHeader {
     background: url(../../assets/contact-header.jpg) top right no-repeat fixed;
     background-size: cover;
-    min-height: 700px;
+    min-height: 500px;
     padding: 1px;
-    h1 {
-        
-    }
 }
+//Contact Header styles ends here
+//Blog Header styles starts here
 .blogHeader {
     background: url(../../assets/blog-header.jpg) right no-repeat;
     background-size: contain;
     min-height: 450px;
     padding: 1px; 
 }
+//Blog Header styles ends here
+//General styles for all headers starts here
 .wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -54,3 +58,4 @@
         } 
     }
 }
+//General styles for all headers ends here

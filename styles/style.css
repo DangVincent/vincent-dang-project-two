@@ -253,7 +253,7 @@ img {
 .contactHeader {
   background: url(../../assets/contact-header.jpg) top right no-repeat fixed;
   background-size: cover;
-  min-height: 700px;
+  min-height: 500px;
   padding: 1px; }
 
 .blogHeader {
@@ -315,3 +315,15 @@ img {
   background-size: contain;
   min-height: 500px;
   padding: 1px; }
+
+footer {
+  background: #1E1713; }
+  footer .wrapper {
+    padding: 5px 0; }
+    footer .wrapper p {
+      font-family: 'Lato', sans-serif;
+      font-size: 1rem;
+      color: #1A315C;
+      margin: 0;
+      color: #FFFFFF;
+      text-align: center; }

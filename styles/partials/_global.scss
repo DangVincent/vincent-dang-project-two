@@ -1,4 +1,4 @@
-
+//Mixins starts here
 @mixin fontSize1($sizeValue) {
     font-family: 'Pacifico', cursive;
     font-size: $sizeValue;
@@ -14,6 +14,8 @@
     font-size: $sizeValue;
     font-weight: '700';
 }
+//Mixins ends here
+//Global styles starts here
 html {
     font-size: 125%;
 }
@@ -89,3 +91,4 @@ img {
     margin: 15px auto 0;
     border: 1px solid tomato;
 }
+//Global styles ends here

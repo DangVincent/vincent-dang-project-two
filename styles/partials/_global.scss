@@ -15,37 +15,39 @@
     font-weight: '700';
 }
 html {
-    font-size: 62.5%;
+    font-size: 125%;
 }
 h1 {
-    @include fontSize1(6.8rem);
+    @include fontSize1(3.4rem);
     line-height: 64px;
+    flex: 2 0 auto;
 }
 h2 {
-    @include fontSize1(5.8rem);
+    @include fontSize1(2.9rem);
     line-height: 68px;
+    flex: 2 0 auto;
 }
 h3 {
-    @include fontSize1(4.3rem);
+    @include fontSize1(2.15rem);
     line-height: 58px;
     letter-spacing: 2.7px;
 }
 h4 {
-    @include fontSize1(4rem);
+    @include fontSize1(2rem);
     letter-spacing: 4.3px;
 }
 h5 {
-    @include fontSize1(4rem);
+    @include fontSize1(2rem);
     text-align: right;
     line-height: 58px;
     letter-spacing: 2.5px;
 }
 h6 {
-    @include fontSize1(3.5rem);
+    @include fontSize1(1.75rem);
     letter-spacing: 2.9px;
 }
 nav {
-    @include fontSize3(2rem);
+    @include fontSize3(1rem);
     text-align: center;
     line-height: 29px;
     letter-spacing: 1.4px;
@@ -61,12 +63,12 @@ a {
     text-decoration: none;
 }
 p {
-    @include fontSize2(2rem);
+    @include fontSize2(1rem);
     line-height: 28px;
     letter-spacing: 2px;
 }
 button {
-    @include fontSize1(2.7rem);
+    @include fontSize1(1.35rem);
     text-align: center;
     line-height: 32px;
     letter-spacing: 1.4px;
@@ -76,12 +78,14 @@ img {
     display: block;
 }
 .logo {
-    @include fontSize1(3rem);
+    @include fontSize1(1.5rem);
     line-height: 24px;
     letter-spacing: 1.7px;
+    text-align: left;
+    text-transform: capitalize;
 }
 .wrapper {
     max-width: 1080px;
-    margin: 0 auto;
+    margin: 15px auto 0;
     border: 1px solid tomato;
 }

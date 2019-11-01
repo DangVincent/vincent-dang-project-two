@@ -8,12 +8,49 @@
     background: url(../../assets/contact-header.jpg) top right no-repeat fixed;
     background-size: cover;
     min-height: 700px;
-    padding: 1px; 
+    padding: 1px;
+    h1 {
+        
+    }
 }
-
 .blogHeader {
     background: url(../../assets/blog-header.jpg) right no-repeat;
     background-size: contain;
     min-height: 450px;
     padding: 1px; 
+}
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    .headerLinks {
+        display: flex;
+        justify-content: space-between;
+        .logo {
+            flex: 2 0 auto;
+            width: 50%;
+            a {
+                color: $primaryColour;
+                transition: color 0.3s;
+                &:hover {
+                    color: $secondaryColour;
+                }
+            }
+        }
+        ul {
+            width: 50%;
+            display: flex;
+            justify-content: space-between;
+            .hLink {
+                text-transform: uppercase;
+                color: $primaryColour;
+                transition: text-shadow 0.3s;
+                &:hover {
+                    padding-bottom: 5px;
+                    text-shadow: 1px 2px 1px $secondaryColour;
+                    border-bottom: 2px solid $secondaryColour; 
+                }
+            }
+        } 
+    }
 }

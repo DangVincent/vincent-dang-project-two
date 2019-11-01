@@ -241,7 +241,7 @@ img {
 
 .wrapper {
   max-width: 1080px;
-  margin: 15px auto 0;
+  margin: 0 auto;
   border: 1px solid tomato; }
 
 .homeHeader {
@@ -262,7 +262,9 @@ img {
   min-height: 450px;
   padding: 1px; }
 
-.wrapper {
+.blogHeader .wrapper,
+.contactHeader .wrapper,
+.homeHeader .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -272,26 +274,36 @@ img {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column; }
-  .wrapper .headerLinks {
+  .blogHeader .wrapper .headerLinks,
+  .contactHeader .wrapper .headerLinks,
+  .homeHeader .wrapper .headerLinks {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between; }
-    .wrapper .headerLinks .logo {
+    .blogHeader .wrapper .headerLinks .logo,
+    .contactHeader .wrapper .headerLinks .logo,
+    .homeHeader .wrapper .headerLinks .logo {
       -webkit-box-flex: 2;
       -ms-flex: 2 0 auto;
       flex: 2 0 auto;
       width: 50%; }
-      .wrapper .headerLinks .logo a {
+      .blogHeader .wrapper .headerLinks .logo a,
+      .contactHeader .wrapper .headerLinks .logo a,
+      .homeHeader .wrapper .headerLinks .logo a {
         color: #1A315C;
         -webkit-transition: color 0.3s;
         -o-transition: color 0.3s;
         transition: color 0.3s; }
-        .wrapper .headerLinks .logo a:hover {
+        .blogHeader .wrapper .headerLinks .logo a:hover,
+        .contactHeader .wrapper .headerLinks .logo a:hover,
+        .homeHeader .wrapper .headerLinks .logo a:hover {
           color: #0CADC0; }
-    .wrapper .headerLinks ul {
+    .blogHeader .wrapper .headerLinks ul,
+    .contactHeader .wrapper .headerLinks ul,
+    .homeHeader .wrapper .headerLinks ul {
       width: 50%;
       display: -webkit-box;
       display: -ms-flexbox;
@@ -299,13 +311,17 @@ img {
       -webkit-box-pack: justify;
       -ms-flex-pack: justify;
       justify-content: space-between; }
-      .wrapper .headerLinks ul .hLink {
+      .blogHeader .wrapper .headerLinks ul .hLink,
+      .contactHeader .wrapper .headerLinks ul .hLink,
+      .homeHeader .wrapper .headerLinks ul .hLink {
         text-transform: uppercase;
         color: #1A315C;
         -webkit-transition: text-shadow 0.3s;
         -o-transition: text-shadow 0.3s;
         transition: text-shadow 0.3s; }
-        .wrapper .headerLinks ul .hLink:hover {
+        .blogHeader .wrapper .headerLinks ul .hLink:hover,
+        .contactHeader .wrapper .headerLinks ul .hLink:hover,
+        .homeHeader .wrapper .headerLinks ul .hLink:hover {
           padding-bottom: 5px;
           text-shadow: 1px 2px 1px #0CADC0;
           border-bottom: 2px solid #0CADC0; }
@@ -315,6 +331,16 @@ img {
   background-size: contain;
   min-height: 500px;
   padding: 1px; }
+
+.contactMain {
+  background: #CCEDFB;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .contactMain .customerService {
+    width: 80%; }
+  .contactMain .contactInfo {
+    width: 20%; }
 
 footer {
   background: #1E1713; }

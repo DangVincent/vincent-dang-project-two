@@ -7,7 +7,16 @@
 }
 //Home Main styles ends here
 //Contact Main styles starts here
-
+.contactMain {
+    background: $tertiaryColour;
+    display: flex;
+    .customerService {
+        width: 80%;
+    }
+    .contactInfo {
+        width: 20%;
+    }
+}
 //Contact Main styles ends here
 // Blog Main styles starts here
 

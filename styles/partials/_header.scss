@@ -23,39 +23,44 @@
 }
 //Blog Header styles ends here
 //General styles for all headers starts here
-.wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    .headerLinks {
+.blogHeader,
+.contactHeader,
+.homeHeader {
+    .wrapper {
+        
         display: flex;
-        justify-content: space-between;
-        .logo {
-            flex: 2 0 auto;
-            width: 50%;
-            a {
-                color: $primaryColour;
-                transition: color 0.3s;
-                &:hover {
-                    color: $secondaryColour;
-                }
-            }
-        }
-        ul {
-            width: 50%;
+        flex-wrap: wrap;
+        flex-direction: column;
+        .headerLinks {
             display: flex;
             justify-content: space-between;
-            .hLink {
-                text-transform: uppercase;
-                color: $primaryColour;
-                transition: text-shadow 0.3s;
-                &:hover {
-                    padding-bottom: 5px;
-                    text-shadow: 1px 2px 1px $secondaryColour;
-                    border-bottom: 2px solid $secondaryColour; 
+            .logo {
+                flex: 2 0 auto;
+                width: 50%;
+                a {
+                    color: $primaryColour;
+                    transition: color 0.3s;
+                    &:hover {
+                        color: $secondaryColour;
+                    }
                 }
             }
-        } 
+            ul {
+                width: 50%;
+                display: flex;
+                justify-content: space-between;
+                .hLink {
+                    text-transform: uppercase;
+                    color: $primaryColour;
+                    transition: text-shadow 0.3s;
+                    &:hover {
+                        padding-bottom: 5px;
+                        text-shadow: 1px 2px 1px $secondaryColour;
+                        border-bottom: 2px solid $secondaryColour; 
+                    }
+                }
+            } 
+        }
     }
 }
 //General styles for all headers ends here

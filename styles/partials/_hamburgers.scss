@@ -1,0 +1,59 @@
+@charset "UTF-8";
+/*!
+ * Hamburgers
+ * @description Tasty CSS-animated hamburgers
+ * @author Jonathan Suh @jonsuh
+ * @site https://jonsuh.com/hamburgers
+ * @link https://github.com/jonsuh/hamburgers
+ */
+
+// Settings
+// ==================================================
+$hamburgerPaddingX           : 5px !default;
+$hamburgerPaddingY           : 5px !default;
+$hamburgerLayerWidth         : 40px !default;
+$hamburgerLayerHeight        : 4px !default;
+$hamburgerLayerSpacing       : 6px !default;
+$hamburgerLayerColor         : $primaryColour !default;
+$hamburgerLayerBorderRadius : 4px !default;
+$hamburgerHoverOpacity       : 0.8 !default;
+$hamburgerActiveLayerColor  : $hamburgerLayerColor !default;
+$hamburgerActiveHoverOpacity: $hamburgerHoverOpacity !default;
+
+// To use CSS filters as the hover effect instead of opacity,
+// set $hamburger-hover-use-filter as true and
+// change the value of $hamburger-hover-filter accordingly.
+$hamburgerHoverUseFilter   : false !default;
+$hamburgerHoverFilter       : opacity(50%) !default;
+$hamburgerActiveHoverFilter: $hamburgerHoverFilter !default;
+
+// Types (Remove or comment out what you don’t need)
+// ==================================================
+$hamburgerTypes: (
+  emphatic
+) !default;
+
+// Base Hamburger (We need this)
+// ==================================================
+@import "base";
+
+// Hamburger types
+// ==================================================
+
+@import "types/emphatic";
+
+// ==================================================
+// Cooking up additional types:
+//
+// The Sass for each hamburger type should be nested
+// inside an @if directive to check whether or not
+// it exists in $hamburger-types so only the CSS for
+// included types are generated.
+//
+// e.g. hamburgers/types/_new-type.scss
+//
+// @if index($hamburger-types, new-type) {
+//   .hamburger--new-type {
+//     ...
+//   }
+// }

@@ -16,7 +16,7 @@
                 <div class="logo">
                     <a href="index.html">textilee</a>
                 </div>
-                <ul>
+                <ul id="navigation" class="menu">
                     <li>
                         <a href="index.html" class="hLink">home</a>
                     </li>
@@ -30,6 +30,11 @@
                         <a href="contact.html" class="hLink">contact</a>
                     </li>
                 </ul>
+                <button class="hamburger hamburgerEmphatic" type="button" aria-label="Menu" aria-controls="navigation" aria-expanded="false">
+                  <span class="hamburgerBox">
+                    <span class="hamburgerInner"></span>
+                  </span>
+                </button>
             </nav>
             <h1>Blog</h1>
         </div>
@@ -126,5 +131,25 @@
         </div>
     </footer>
     <!-- Footer content ends here -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <!-- hamburger animation from https://jonsuh.com/hamburgers/ -->
+    <script>
+      // Look for .hamburger
+      var hamburger = document.querySelector(".hamburger");
+      var menu = document.querySelector(".menu");
+      // On click
+      hamburger.addEventListener("click", function() {
+        var expanded = this.getAttribute("aria-expanded")
+        // Toggle class "is-active"
+        hamburger.classList.toggle("isActive");
+        menu.classList.toggle("show");
+        // Do something else, like open/close menu
+        if (expanded === "false") {
+            this.setAttribute("aria-expanded", "true")
+        } else {
+            this.setAttribute("aria-expanded", "false")
+        }
+      });
+    </script>
 </body>
 </html>

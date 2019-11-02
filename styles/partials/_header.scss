@@ -1,21 +1,18 @@
 //Home Header styles starts here
 .homeHeader {
-    background: url(../../assets/header-home.jpg) bottom right no-repeat fixed;
-    background-size: cover;
+    background: url(../../assets/header-home.jpg) bottom right no-repeat;
     min-height: 700px;
 }
 //Home Header styles ends here
 //Contact Header styles starts here
 .contactHeader {
     background: url(../../assets/contact-header.jpg) center right no-repeat;
-    background-size: cover;
     min-height: 400px;
 }
 //Contact Header styles ends here
 //Blog Header styles starts here
 .blogHeader {
     background: url(../../assets/blog-header.jpg) right no-repeat;
-    background-size: contain;
     min-height: 450px; 
 }
 //Blog Header styles ends here
@@ -23,9 +20,9 @@
 .blogHeader,
 .contactHeader,
 .homeHeader {
+    background-size: cover;
     padding-top: 20px;
     .wrapper {
-        
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
@@ -33,8 +30,7 @@
             display: flex;
             justify-content: space-between;
             .logo {
-                flex: 2 0 auto;
-                width: 63%;
+                flex: 3 0 auto;
                 a {
                     color: $primaryColour;
                     transition: color 0.3s;
@@ -43,10 +39,11 @@
                     }
                 }
             }
-            ul {
-                width: 37%;
+            .menu {
+                flex: 1 1 auto;
                 display: flex;
                 justify-content: space-between;
+                margin-bottom: 11px;
                 .hLink {
                     text-transform: uppercase;
                     color: $primaryColour;
@@ -55,6 +52,32 @@
                         padding-bottom: 5px;
                         text-shadow: 1px 2px 1px $secondaryColour;
                         border-bottom: 2px solid $secondaryColour; 
+                    }
+                }
+            }
+            @media (max-width: 720px) {
+                .menu {
+                    display: none;
+                }
+                .hamburger {
+                    display: block;
+                }
+                .show.menu {
+                    margin: 0;
+                    display: block;
+                    background: $secondaryColour;
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    bottom: 65%;
+                    padding: 50px;
+                    border-bottom-left-radius: 50px;
+                }
+                li {
+                    margin-bottom: 16px;
+                    &:hover {
+                        opacity: 0.6;
+                        // border-bottom: 2px solid $tertiaryColour;
                     }
                 }
             } 

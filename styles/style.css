@@ -178,7 +178,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   .hamburger:hover {
     opacity: 0.8; }
   .hamburger.isActive {
-    position: absolute;
+    position: fixed;
     background: #0CADC0;
     top: 0;
     right: 0;
@@ -189,6 +189,9 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
     .hamburger.isActive .hamburgerInner::before,
     .hamburger.isActive .hamburgerInner::after {
       background-color: #21404f; }
+  @media (max-width: 720px) {
+    .hamburger {
+      display: block; } }
 
 .hamburgerBox {
   width: 40px;
@@ -414,7 +417,8 @@ img {
       display: flex;
       -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-      justify-content: space-between; }
+      justify-content: space-between;
+      position: relative; }
       .blogHeader .wrapper .headerLinks .logo,
       .contactHeader .wrapper .headerLinks .logo,
       .homeHeader .wrapper .headerLinks .logo {
@@ -432,6 +436,11 @@ img {
           .contactHeader .wrapper .headerLinks .logo a:hover,
           .homeHeader .wrapper .headerLinks .logo a:hover {
             color: #0CADC0; }
+        @media (max-width: 720px) {
+          .blogHeader .wrapper .headerLinks .logo,
+          .contactHeader .wrapper .headerLinks .logo,
+          .homeHeader .wrapper .headerLinks .logo {
+            margin-bottom: 16px; } }
       .blogHeader .wrapper .headerLinks .menu,
       .contactHeader .wrapper .headerLinks .menu,
       .homeHeader .wrapper .headerLinks .menu {
@@ -459,22 +468,19 @@ img {
             padding-bottom: 5px;
             text-shadow: 1px 2px 1px #0CADC0;
             border-bottom: 2px solid #0CADC0; }
+        @media (max-width: 720px) {
+          .blogHeader .wrapper .headerLinks .menu,
+          .contactHeader .wrapper .headerLinks .menu,
+          .homeHeader .wrapper .headerLinks .menu {
+            display: none; } }
       @media (max-width: 720px) {
-        .blogHeader .wrapper .headerLinks .menu,
-        .contactHeader .wrapper .headerLinks .menu,
-        .homeHeader .wrapper .headerLinks .menu {
-          display: none; }
-        .blogHeader .wrapper .headerLinks .hamburger,
-        .contactHeader .wrapper .headerLinks .hamburger,
-        .homeHeader .wrapper .headerLinks .hamburger {
-          display: block; }
-        .blogHeader .wrapper .headerLinks .show.menu,
-        .contactHeader .wrapper .headerLinks .show.menu,
-        .homeHeader .wrapper .headerLinks .show.menu {
+        .blogHeader .wrapper .headerLinks .menu.show,
+        .contactHeader .wrapper .headerLinks .menu.show,
+        .homeHeader .wrapper .headerLinks .menu.show {
           margin: 0;
           display: block;
           background: #0CADC0;
-          position: absolute;
+          position: fixed;
           top: 0;
           right: 0;
           bottom: 65%;
@@ -483,11 +489,19 @@ img {
         .blogHeader .wrapper .headerLinks li,
         .contactHeader .wrapper .headerLinks li,
         .homeHeader .wrapper .headerLinks li {
-          margin-bottom: 16px; }
+          margin-bottom: 16px;
+          -webkit-transition: -webkit-transform 0.3s ease-in-out;
+          transition: -webkit-transform 0.3s ease-in-out;
+          -o-transition: transform 0.3s ease-in-out;
+          transition: transform 0.3s ease-in-out;
+          transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out; }
           .blogHeader .wrapper .headerLinks li:hover,
           .contactHeader .wrapper .headerLinks li:hover,
           .homeHeader .wrapper .headerLinks li:hover {
-            opacity: 0.6; } }
+            opacity: 0.6;
+            -webkit-transform: scale(1.1);
+            -ms-transform: scale(1.1);
+            transform: scale(1.1); } }
 
 .bannerContent {
   background: url(../../assets/banner.jpg) center no-repeat;
@@ -506,11 +520,19 @@ img {
     justify-content: space-between;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap; }
+    @media (max-width: 720px) {
+      .contactMain .wrapper {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center; } }
   .contactMain .customerService {
     width: 75%;
     background: #21404f;
     padding: 35px 50px;
-    border: 1px solid tomato;
     position: relative;
     -webkit-box-shadow: 20px 20px #0CADC0;
     box-shadow: 20px 20px #0CADC0;
@@ -525,6 +547,12 @@ img {
       -webkit-box-pack: justify;
       -ms-flex-pack: justify;
       justify-content: space-between; }
+      @media (max-width: 560px) {
+        .contactMain .customerService form {
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+          flex-direction: column; } }
     .contactMain .customerService .name, .contactMain .customerService .emailAddress {
       padding: 20px 0 15px 20px;
       width: 45%;
@@ -541,6 +569,12 @@ img {
       .contactMain .customerService .name:focus, .contactMain .customerService .emailAddress:focus {
         border-bottom: 1px solid #0CADC0;
         color: #FFFFFF; }
+      @media (max-width: 560px) {
+        .contactMain .customerService .name, .contactMain .customerService .emailAddress {
+          width: 100%; } }
+      @media (max-width: 420px) {
+        .contactMain .customerService .name, .contactMain .customerService .emailAddress {
+          padding: 20px 10px 15px 10px; } }
     .contactMain .customerService .message {
       resize: none;
       margin-top: 30px;
@@ -558,6 +592,9 @@ img {
       .contactMain .customerService .message:focus {
         border-bottom: 1px solid #0CADC0;
         color: #FFFFFF; }
+      @media (max-width: 420px) {
+        .contactMain .customerService .message {
+          padding: 20px 10px 15px 10px; } }
     .contactMain .customerService .submit {
       font-family: 'Pacifico', cursive;
       font-size: 1rem;
@@ -572,6 +609,15 @@ img {
       .contactMain .customerService .submit:hover {
         text-shadow: 2px 1px 1px #0CADC0;
         background: #CCEDFB; }
+    @media (max-width: 720px) {
+      .contactMain .customerService {
+        position: initial;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        width: 85%; } }
+    @media (max-width: 560px) {
+      .contactMain .customerService {
+        padding: 35px 25px; } }
   .contactMain .contactInfo {
     width: 20%;
     -ms-flex-item-align: center;
@@ -585,8 +631,7 @@ img {
     flex-direction: column;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
-    justify-content: center;
-    border: 1px solid tomato; }
+    justify-content: center; }
     .contactMain .contactInfo ul {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -595,9 +640,15 @@ img {
       -ms-flex-pack: justify;
       justify-content: space-between;
       width: 60%; }
-    .contactMain .contactInfo a {
+      @media (max-width: 720px) {
+        .contactMain .contactInfo ul {
+          width: 100%;
+          -webkit-box-pack: space-evenly;
+          -ms-flex-pack: space-evenly;
+          justify-content: space-evenly; } }
+    .contactMain .contactInfo .socialMediaLink {
       color: #21404f; }
-      .contactMain .contactInfo a:hover {
+      .contactMain .contactInfo .socialMediaLink:hover {
         text-shadow: 2px 2px 1px #0CADC0; }
     .contactMain .contactInfo p {
       margin: 0;
@@ -607,6 +658,18 @@ img {
       color: #21404f; }
       .contactMain .contactInfo p:nth-of-type(1) {
         margin: 10px 0; }
+      @media (max-width: 720px) {
+        .contactMain .contactInfo p {
+          font-size: 0.8rem;
+          line-height: 22px;
+          text-align: center; } }
+    @media (max-width: 720px) {
+      .contactMain .contactInfo {
+        width: 85%;
+        -ms-flex-item-align: initial;
+        -ms-grid-row-align: initial;
+        align-self: initial;
+        margin: 20px 0; } }
 
 footer {
   background: #111211; }
@@ -619,3 +682,9 @@ footer {
       margin: 0;
       color: #FFFFFF;
       text-align: center; }
+      @media (max-width: 720px) {
+        footer .wrapper p {
+          font-size: 0.8rem; } }
+      @media (max-width: 425px) {
+        footer .wrapper p {
+          font-size: 0.6rem; } }

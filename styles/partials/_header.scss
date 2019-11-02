@@ -29,6 +29,7 @@
         .headerLinks {
             display: flex;
             justify-content: space-between;
+            position: relative;
             .logo {
                 flex: 3 0 auto;
                 a {
@@ -37,6 +38,9 @@
                     &:hover {
                         color: $secondaryColour;
                     }
+                }
+                @media (max-width: 720px) {
+                    margin-bottom: 16px;
                 }
             }
             .menu {
@@ -54,19 +58,16 @@
                         border-bottom: 2px solid $secondaryColour; 
                     }
                 }
-            }
-            @media (max-width: 720px) {
-                .menu {
+                @media (max-width: 720px) {
                     display: none;
                 }
-                .hamburger {
-                    display: block;
-                }
-                .show.menu {
+            }
+            @media (max-width: 720px) {
+                .menu.show {
                     margin: 0;
                     display: block;
                     background: $secondaryColour;
-                    position: absolute;
+                    position: fixed;
                     top: 0;
                     right: 0;
                     bottom: 65%;
@@ -75,9 +76,10 @@
                 }
                 li {
                     margin-bottom: 16px;
+                    transition: transform 0.3s ease-in-out;
                     &:hover {
                         opacity: 0.6;
-                        // border-bottom: 2px solid $tertiaryColour;
+                        transform: scale(1.1);
                     }
                 }
             } 

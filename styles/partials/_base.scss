@@ -27,7 +27,7 @@
   }
 
   &.isActive {
-    position: absolute;
+    position: fixed;
     background: $secondaryColour;
     top: 0;
     right: 0;
@@ -46,6 +46,9 @@
     .hamburgerInner::after {
       background-color: $hamburgerActiveLayerColor;
     }
+  }
+  @media (max-width: 720px) {
+    display: block;
   }
 }
 

@@ -387,8 +387,19 @@ img {
   border: 1px solid tomato; }
 
 .homeHeader {
-  background: url(../../assets/header-home.jpg) bottom right no-repeat;
+  background: url(../../assets/header-home.jpg) bottom no-repeat;
   min-height: 700px; }
+  .homeHeader h2 {
+    margin-top: 60px;
+    width: 60%; }
+  .homeHeader .homeBoxHeaderImage {
+    position: relative;
+    top: 100px;
+    right: 50px;
+    -webkit-transform: scale(1.3, 1.4);
+    -ms-transform: scale(1.3, 1.4);
+    transform: scale(1.3, 1.4);
+    width: 57%; }
 
 .contactHeader {
   background: url(../../assets/contact-header.jpg) center right no-repeat;
@@ -491,8 +502,8 @@ img {
       .contactHeader .wrapper .headerLinks .menu,
       .homeHeader .wrapper .headerLinks .menu {
         -webkit-box-flex: 1;
-        -ms-flex: 1 1 auto;
-        flex: 1 1 auto;
+        -ms-flex: 1 1 250px;
+        flex: 1 1 250px;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -522,10 +533,35 @@ img {
 
 .homeMain {
   background: #CCEDFB; }
+  .homeMain .newTechniquesContent {
+    padding: 200px 0 100px; }
+    .homeMain .newTechniquesContent .wrapper {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between; }
+    .homeMain .newTechniquesContent .newTechniquesImage {
+      width: 25%;
+      -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+      order: 1;
+      -webkit-box-shadow: -16px 16px #0CADC0;
+      box-shadow: -16px 16px #0CADC0;
+      -ms-flex-item-align: start;
+      align-self: flex-start; }
+    .homeMain .newTechniquesContent .newTechniquesDescription {
+      width: 64%; }
+    .homeMain .newTechniquesContent h3 {
+      margin: 5px 0 10px; }
+    .homeMain .newTechniquesContent p {
+      font-size: 0.8rem; }
   .homeMain .findOutMore {
     border: none;
     background: #21404f;
     color: #FFFFFF;
+    margin-top: 40px;
     padding: 5px 30px 10px;
     -webkit-transition: background 0.3s, text-shadow 0.8s;
     -o-transition: background 0.3s, text-shadow 0.8s;
@@ -567,11 +603,11 @@ img {
       -ms-flex-align: start;
       align-items: flex-start; }
     .homeMain .serviceInfoContent .serviceInfoDescription {
-      width: 90%; }
-    .homeMain .serviceInfoContent i {
+      width: 89%; }
+    .homeMain .serviceInfoContent .serviceIcon {
       margin-top: 10px;
-      padding: 10px;
-      border-radius: 50px;
+      padding: 8px 11px;
+      border-radius: 30px;
       font-size: 1rem;
       color: #FFFFFF;
       background: #0CADC0; }
@@ -655,7 +691,7 @@ img {
     .homeMain .searchStyleContent h3 {
       margin: 0; }
     .homeMain .searchStyleContent p {
-      margin: 10px 0 50px; }
+      margin: 10px 0; }
 
 .contactMain {
   background: #CCEDFB; }

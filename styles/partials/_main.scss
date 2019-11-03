@@ -26,11 +26,21 @@
         box-shadow: 20px 20px $secondaryColour;
         bottom: 120px;
         right: 55px;
+        @media (max-width: 720px) {
+            position: initial;
+            box-shadow: none;
+            width: 85%;
+        }
+        @media (max-width: 560px) {
+            padding: 35px 25px;
+            width: 90%;
+        }
         form {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
             @media (max-width: 560px) {
+                font-size: 0.7rem;
                 flex-direction: column;
             }
         }
@@ -92,14 +102,9 @@
                 text-shadow: 2px 1px 1px $secondaryColour;
                 background: $tertiaryColour;
             }
-        }
-        @media (max-width: 720px) {
-            position: initial;
-            box-shadow: none;
-            width: 85%;
-        }
-        @media (max-width: 560px) {
-            padding: 35px 25px;
+            @media (max-width: 560px) {
+                font-size: 0.7rem;
+            }
         }
     }
     .contactInfo {
@@ -108,6 +113,11 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+        @media (max-width: 720px) {
+            width: 85%;
+            align-self: initial;
+            margin: 20px 0;
+        }
         ul {
             display: flex;
             justify-content: space-between;
@@ -135,12 +145,11 @@
                 line-height: 22px;
                 text-align: center;
             }
+            @media (max-width: 560px) {
+                font-size: 0.7rem;
+            }
         }
-        @media (max-width: 720px) {
-            width: 85%;
-            align-self: initial;
-            margin: 20px 0;
-        }
+        
     }
 }
 //Contact Main styles ends here
@@ -151,6 +160,10 @@
         display: flex;
         flex-wrap: wrap;
         align-items: flex-start;
+        @media (max-width: 960px) {
+            flex-direction: column;
+            align-items: center;
+        }
     }
     .blogPost {
         width: 75%;
@@ -158,23 +171,53 @@
         position: relative;
         right: 136px;
         box-shadow: 0 0 0 15px $secondaryColour;
+        @media (max-width: 1080px) {
+            position: initial;
+            box-shadow: none;
+        }
+        @media (max-width: 960px) {
+            width: 60%;
+        }
+        @media (max-width: 360px) {
+            width: 90%;
+        }
         .blogPostImage {
             box-shadow: 25px 20px $secondaryColour;
             position: relative;
             bottom: 75px;
             right: 10px;
+            @media (max-width: 1080px) {
+                box-shadow: none;
+                position: initial;
+            }
         }
         .blogPostDescription {
             padding: 0 30px 50px 135px;
+            @media (max-width: 1080px) {
+                padding: 0 0 0 10px;
+            }
+            @media (max-width: 960px) {
+                padding: 0 10px 10px 10px;
+            }
         }
         h3 {
             color: $accentColour;
             margin: 0 0 10px;
+            @media (max-width: 710px) {
+                font-size: 1.75rem;
+                text-align: center;
+            }
+            @media (max-width: 360px) {
+                font-size: 1.2rem;
+            }
         }
         p {
             color: $accentColour;
             margin: 0 0 20px;
             font-size: 0.8rem;
+            @media (max-width: 710px) {
+                font-size: 0.7rem;
+            }
         }
     }
     .newsContent {
@@ -183,17 +226,39 @@
         position: relative;
         left: 135px;
         top: 200px;
+        padding: 0 0 15px 10px;
+        @media (max-width: 1330px) {
+            left: 0;
+        }
+        @media (max-width: 1080px) {
+            position: initial;
+        }
+        @media (max-width: 960px) {
+            margin-top: 50px;
+            width: 60%;
+            padding: 0;
+        }
+        @media (max-width: 360px) {
+            width: 90%;
+        }
         .newsContentImage {
             position: relative;
             bottom: 20px;
-            left: 10px;
+            @media (max-width: 1080px) {
+                position: initial;
+            }
         }
         .newsPost {
-            padding: 0 0 15px 10px;
+            @media (max-width: 960px) {
+                padding: 0 10px 10px 10px;
+            }
         }
         h6 {
             color: $accentColour;
             margin: 5px 0 0;
+            @media (max-width: 360px) {
+                font-size: 1.1rem;
+            }
         }
         li {
             list-style-type: disc;
@@ -206,28 +271,55 @@
             font-size: 0.7rem;
             line-height: 20px;
         }
-
     }
     .comments {
         width: 75%;
         margin-bottom: 100px;
+        @media (max-width: 960px) {
+            width: 60%;
+        }
+        @media (max-width: 360px) {
+            width: 90%;
+        }
         h4 {
             text-transform: capitalize;
             margin: 30px 0 0;
+            @media (max-width: 720px) {
+                font-size: 1.75rem;
+            }
+            @media (max-width: 360px) {
+                font-size: 1.2rem;
+            }
         }
         .userComment {
             display: flex;
             margin: 20px 0 100px;
+            @media (max-width: 940px) {
+                flex-direction: column;
+                align-items: center;
+            }
         }
         .userComment:nth-of-type(2) {
             margin-bottom: 30px;
         }
         .userImage {
             width: 10%;
+            @media (max-width: 940px) {
+                width: 30%;
+            }
+            @media (max-width: 500px) {
+                width: 50%;
+            }
         }
         .userCommentDescription{
             width: 90%;
             padding: 0 140px 0 20px;
+            @media (max-width: 960px) {
+                padding: 0 0 0 20px;
+            }
+            @media (max-width: 940px) {
+                width: 100%;
+            }
         } 
         p:nth-of-type(1) {
             font-weight: bold;
@@ -236,11 +328,21 @@
         p {
             font-size: 0.8rem;
             line-height: 23px;
+            @media (max-width: 710px) {
+                font-size: 0.7rem;
+            }
         }
         form {
+            width: 80%;
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
+            @media (max-width: 960px) {
+                width: 100%;
+            }
+            @media (max-width: 720px) {
+                font-size: 0.7rem;
+            }
             @media (max-width: 560px) {
                 flex-direction: column;
             }
@@ -302,17 +404,12 @@
             border: none;
             transition: text-shadow 0.8s, background 0.3s;
             &:hover {
-                text-shadow: 2px 1px 1px $primaryColour;
+                text-shadow: 2px 2px 1px $primaryColour;
                 background: $secondaryColour;
             }
-        }
-        @media (max-width: 720px) {
-            position: initial;
-            box-shadow: none;
-            width: 85%;
-        }
-        @media (max-width: 560px) {
-            padding: 35px 25px;
+            @media (max-width: 720px) {
+                font-size: 0.7rem;
+            }
         }
     }
 }

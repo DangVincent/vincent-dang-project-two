@@ -325,7 +325,7 @@ h5 {
 
 h6 {
   font-family: 'Pacifico', cursive;
-  font-size: 1.75rem;
+  font-size: 1.3rem;
   color: #21404f;
   letter-spacing: 2.9px; }
 
@@ -352,7 +352,8 @@ p {
   font-size: 1rem;
   color: #21404f;
   line-height: 28px;
-  letter-spacing: 2px; }
+  letter-spacing: 2px;
+  margin: 0; }
 
 button {
   font-family: 'Pacifico', cursive;
@@ -387,16 +388,21 @@ img {
 .contactHeader {
   background: url(../../assets/contact-header.jpg) center right no-repeat;
   min-height: 400px; }
+  @media (max-width: 380px) {
+    .contactHeader h1 {
+      line-height: 100px; } }
 
 .blogHeader {
   background: url(../../assets/blog-header.jpg) right no-repeat;
-  min-height: 450px; }
+  min-height: 400px; }
+  .blogHeader h1 {
+    margin: 80px 0 0; }
 
 .blogHeader,
 .contactHeader,
 .homeHeader {
   background-size: cover;
-  padding-top: 20px; }
+  padding-top: 10px; }
   .blogHeader .wrapper,
   .contactHeader .wrapper,
   .homeHeader .wrapper {
@@ -587,7 +593,7 @@ img {
       -o-transition: opacity 0.3s;
       transition: opacity 0.3s; }
       .contactMain .customerService .message:hover {
-        border-bottom: 1px solid #CCEDFB;
+        border: 1px solid #CCEDFB;
         opacity: 0.5; }
       .contactMain .customerService .message:focus {
         border-bottom: 1px solid #0CADC0;
@@ -653,9 +659,7 @@ img {
     .contactMain .contactInfo p {
       margin: 0;
       line-height: 18px;
-      font-family: 'Lato', sans-serif;
-      font-size: 0.7rem;
-      color: #21404f; }
+      font-size: 0.7rem; }
       .contactMain .contactInfo p:nth-of-type(1) {
         margin: 10px 0; }
       @media (max-width: 720px) {
@@ -670,6 +674,170 @@ img {
         -ms-grid-row-align: initial;
         align-self: initial;
         margin: 20px 0; } }
+
+.blogMain {
+  background: #CCEDFB; }
+  .blogMain .wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start; }
+  .blogMain .blogPost {
+    width: 75%;
+    background: #21404f;
+    position: relative;
+    right: 136px;
+    -webkit-box-shadow: 0 0 0 15px #0CADC0;
+    box-shadow: 0 0 0 15px #0CADC0; }
+    .blogMain .blogPost .blogPostImage {
+      -webkit-box-shadow: 25px 20px #0CADC0;
+      box-shadow: 25px 20px #0CADC0;
+      position: relative;
+      bottom: 75px;
+      right: 10px; }
+    .blogMain .blogPost .blogPostDescription {
+      padding: 0 30px 50px 135px; }
+    .blogMain .blogPost h3 {
+      color: #FFFFFF;
+      margin: 0 0 10px; }
+    .blogMain .blogPost p {
+      color: #FFFFFF;
+      margin: 0 0 20px;
+      font-size: 0.8rem; }
+  .blogMain .newsContent {
+    width: 25%;
+    background: #21404f;
+    position: relative;
+    left: 135px;
+    top: 200px; }
+    .blogMain .newsContent .newsContentImage {
+      position: relative;
+      bottom: 20px;
+      left: 10px; }
+    .blogMain .newsContent .newsPost {
+      padding: 0 0 15px 10px; }
+    .blogMain .newsContent h6 {
+      color: #FFFFFF;
+      margin: 5px 0 0; }
+    .blogMain .newsContent li {
+      list-style-type: disc;
+      color: #FFFFFF;
+      margin-left: 25px; }
+    .blogMain .newsContent p {
+      color: #FFFFFF;
+      margin: 0;
+      font-size: 0.7rem;
+      line-height: 20px; }
+  .blogMain .comments {
+    width: 75%;
+    margin-bottom: 100px; }
+    .blogMain .comments h4 {
+      text-transform: capitalize;
+      margin: 30px 0 0; }
+    .blogMain .comments .userComment {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      margin: 20px 0 100px; }
+    .blogMain .comments .userComment:nth-of-type(2) {
+      margin-bottom: 30px; }
+    .blogMain .comments .userImage {
+      width: 10%; }
+    .blogMain .comments .userCommentDescription {
+      width: 90%;
+      padding: 0 140px 0 20px; }
+    .blogMain .comments p:nth-of-type(1) {
+      font-weight: bold;
+      margin-top: 5px; }
+    .blogMain .comments p {
+      font-size: 0.8rem;
+      line-height: 23px; }
+    .blogMain .comments form {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between; }
+      @media (max-width: 560px) {
+        .blogMain .comments form {
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+          flex-direction: column; } }
+    .blogMain .comments .name, .blogMain .comments .emailAddress {
+      padding: 20px 0 15px 20px;
+      width: 45%;
+      background: none;
+      border: none;
+      border-bottom: 1px solid #0CADC0;
+      color: #111211;
+      -webkit-transition: opacity 0.3s;
+      -o-transition: opacity 0.3s;
+      transition: opacity 0.3s; }
+      .blogMain .comments .name:hover, .blogMain .comments .emailAddress:hover {
+        border-bottom: 1px solid #21404f;
+        opacity: 0.5; }
+      .blogMain .comments .name:focus, .blogMain .comments .emailAddress:focus {
+        border-bottom: 1px solid #21404f;
+        color: #111211; }
+      @media (max-width: 560px) {
+        .blogMain .comments .name, .blogMain .comments .emailAddress {
+          width: 100%; } }
+      @media (max-width: 420px) {
+        .blogMain .comments .name, .blogMain .comments .emailAddress {
+          padding: 20px 10px 15px 10px; } }
+    .blogMain .comments .comment {
+      resize: none;
+      margin-top: 30px;
+      padding: 20px 0 15px 20px;
+      width: 100%;
+      color: #111211;
+      background: none;
+      border: 1px solid #0CADC0;
+      -webkit-transition: opacity 0.3s;
+      -o-transition: opacity 0.3s;
+      transition: opacity 0.3s; }
+      .blogMain .comments .comment:hover {
+        border: 1px solid #21404f;
+        opacity: 0.5; }
+      .blogMain .comments .comment:focus {
+        border-bottom: 1px solid #21404f;
+        color: #111211; }
+      @media (max-width: 420px) {
+        .blogMain .comments .comment {
+          padding: 20px 10px 15px 10px; } }
+    .blogMain .comments .submit {
+      font-family: 'Pacifico', cursive;
+      font-size: 1rem;
+      color: #21404f;
+      margin-top: 30px;
+      padding: 5px 0;
+      background: #21404f;
+      color: #FFFFFF;
+      width: 100%;
+      border: none;
+      -webkit-transition: text-shadow 0.8s, background 0.3s;
+      -o-transition: text-shadow 0.8s, background 0.3s;
+      transition: text-shadow 0.8s, background 0.3s; }
+      .blogMain .comments .submit:hover {
+        text-shadow: 2px 1px 1px #21404f;
+        background: #0CADC0; }
+    @media (max-width: 720px) {
+      .blogMain .comments {
+        position: initial;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        width: 85%; } }
+    @media (max-width: 560px) {
+      .blogMain .comments {
+        padding: 35px 25px; } }
 
 footer {
   background: #111211; }

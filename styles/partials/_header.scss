@@ -8,12 +8,20 @@
 .contactHeader {
     background: url(../../assets/contact-header.jpg) center right no-repeat;
     min-height: 400px;
+    h1 {
+        @media (max-width: 380px) {
+        line-height: 100px;
+        }
+    }
 }
 //Contact Header styles ends here
 //Blog Header styles starts here
 .blogHeader {
     background: url(../../assets/blog-header.jpg) right no-repeat;
-    min-height: 450px; 
+    min-height: 400px;
+    h1 {
+        margin: 80px 0 0;
+    } 
 }
 //Blog Header styles ends here
 //General styles for all headers starts here
@@ -21,7 +29,7 @@
 .contactHeader,
 .homeHeader {
     background-size: cover;
-    padding-top: 20px;
+    padding-top: 10px;
     .wrapper {
         display: flex;
         flex-wrap: wrap;

@@ -45,7 +45,7 @@ h5 {
     letter-spacing: 2.5px;
 }
 h6 {
-    @include fontSize1(1.75rem);
+    @include fontSize1(1.3rem);
     letter-spacing: 2.9px;
 }
 nav {
@@ -68,6 +68,7 @@ p {
     @include fontSize2(1rem);
     line-height: 28px;
     letter-spacing: 2px;
+    margin: 0;
 }
 button {
     @include fontSize1(1.35rem);

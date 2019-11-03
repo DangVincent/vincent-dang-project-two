@@ -1,9 +1,133 @@
 // Home Main styles starts here
-.bannerContent {
-    background: url(../../assets/banner.jpg) center no-repeat;
-    background-size: contain;
-    min-height: 500px;
-    padding: 1px;
+.homeMain {
+    background: $tertiaryColour;
+    .findOutMore {
+        border: none;
+        background: $primaryColour;
+        color: $accentColour;
+        padding: 5px 30px 10px;
+        transition: background 0.3s, text-shadow 0.8s;
+        &:hover {
+            background: $secondaryColour;
+            text-shadow: 2px 2px 1px $primaryColour;
+        }
+    }
+    .galleryContent {
+        background: $primaryColour;
+        padding: 100px 0;
+        .wrapper {
+            display: flex;
+            justify-content: space-between;
+        }
+        .galleryImage {
+            width: 31.5%;
+        }
+    }
+    .serviceInfoContent {
+        padding: 100px 0 150px;
+        .wrapper {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .serviceInfo {
+            width: 50%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+        .serviceInfoDescription {
+            width: 90%;
+        }
+        i {
+            margin-top: 10px;
+            padding: 10px;
+            border-radius: 50px;
+            font-size: 1rem;
+            color: $accentColour;
+            background: $secondaryColour;
+        }
+        h3 {
+            margin: 0 0 8px;
+        }
+        p {
+            line-height: 26px;
+        } 
+    }
+    .featuredContent {
+        background: $primaryColour;
+        .featuredContent1,
+        .featuredContent2  {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .featuredContent1 .featuredContentImage {
+            position: relative;
+            bottom: 50px;
+            right: 136px;
+            box-shadow: 15px 15px $secondaryColour;
+        }
+        .featuredContent1 .featuredContentDescription {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+        }
+        .featuredContent2 .featuredContentImage {
+            position: relative;
+            left: 136px;
+            top: 50px;
+            box-shadow: -15px 15px $secondaryColour;
+        }
+        .featuredContent2 .featuredContentDescription {
+            order: -1;
+            text-align: right;
+        }
+        .featuredContentDescription {
+            width: 42.5%;
+        }
+        .featuredContentImage {
+            width: 55%;
+        }
+        h5 {
+            color: $accentColour;
+            margin: 0;
+        }
+        p {
+            color: $accentColour;
+        }
+        .readMore {
+            border: none;
+            background: $tertiaryColour;
+            padding: 5px 20px;
+            margin-top: 10px;
+            transition: text-shadow 0.8s, background 0.3s, color 0.3s;
+            &:hover {
+                text-shadow: 2px 2px 1px $primaryColour;
+                background: $secondaryColour;
+                color: $accentColour;
+            }
+        }
+    }
+    .bannerContent {
+        background: url(../../assets/banner.jpg) center no-repeat;
+        background-size: cover;
+        min-height: 500px;
+        padding: 1px;
+    }
+    .searchStyleContent {
+        padding: 100px 0 150px;
+        .wrapper {
+            text-align: center; 
+        }
+        h3 {
+            margin: 0;
+        }
+        p {
+            margin: 10px 0 50px;
+        }
+    }
 }
 //Home Main styles ends here
 //Contact Main styles starts here
@@ -94,13 +218,14 @@
         .submit {
             @include fontSize1(1rem);
             margin-top: 30px;
-            background: $accentColour;
+            background: $tertiaryColour;
             width: 100%;
             border: none;
-            transition: text-shadow 0.8s, background 0.3s;
+            transition: text-shadow 0.8s, background 0.3s, color 0.3s;
             &:hover {
-                text-shadow: 2px 1px 1px $secondaryColour;
-                background: $tertiaryColour;
+                text-shadow: 2px 2px 1px $primaryColour;
+                background: $secondaryColour;
+                color: $accentColour;
             }
             @media (max-width: 560px) {
                 font-size: 0.7rem;

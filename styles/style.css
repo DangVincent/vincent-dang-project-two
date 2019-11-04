@@ -380,8 +380,7 @@ img {
 
 .wrapper {
   max-width: 1080px;
-  margin: 0 auto;
-  border: 1px solid tomato; }
+  margin: 0 auto; }
 
 .homeHeader {
   background: url(../../assets/header-home.jpg) bottom no-repeat;
@@ -425,7 +424,9 @@ img {
     -webkit-transform: scale(1.3, 1.4);
     -ms-transform: scale(1.3, 1.4);
     transform: scale(1.3, 1.4);
-    width: 57%; }
+    width: 57%;
+    -o-object-fit: cover;
+    object-fit: cover; }
     @media (max-width: 1070px) {
       .homeHeader .homeBoxHeaderImage {
         position: initial;
@@ -600,7 +601,9 @@ img {
       -webkit-box-shadow: -16px 16px #0CADC0;
       box-shadow: -16px 16px #0CADC0;
       -ms-flex-item-align: start;
-      align-self: flex-start; }
+      align-self: flex-start;
+      -o-object-fit: cover;
+      object-fit: cover; }
       @media (max-width: 1070px) {
         .homeMain .newTechniquesContent .newTechniquesImage {
           -webkit-box-ordinal-group: 1;
@@ -699,7 +702,10 @@ img {
           -ms-flex-align: center;
           align-items: center; } }
     .homeMain .galleryContent .galleryImage {
-      width: 31.5%; }
+      width: 31.5%;
+      -o-object-fit: cover;
+      object-fit: cover;
+      overflow: hidden; }
       @media (max-width: 880px) {
         .homeMain .galleryContent .galleryImage {
           width: 40%; } }
@@ -715,6 +721,16 @@ img {
       @media (max-width: 880px) {
         .homeMain .galleryContent .galleryImage:nth-of-type(2) {
           margin: 30px 0; } }
+    .homeMain .galleryContent img {
+      -webkit-transition: -webkit-transform 0.5s;
+      transition: -webkit-transform 0.5s;
+      -o-transition: transform 0.5s;
+      transition: transform 0.5s;
+      transition: transform 0.5s, -webkit-transform 0.5s; }
+      .homeMain .galleryContent img:hover {
+        -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        transform: scale(1.2); }
   .homeMain .serviceInfoContent {
     padding: 100px 0 150px; }
     @media (max-width: 1070px) {
@@ -779,7 +795,19 @@ img {
       border-radius: 30px;
       font-size: 1rem;
       color: #FFFFFF;
-      background: #0CADC0; }
+      background: #0CADC0;
+      -webkit-transition: bottom 0.3s ease-in-out, color 0.5s ease-in-out, background 0.6s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+      transition: bottom 0.3s ease-in-out, color 0.5s ease-in-out, background 0.6s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+      -o-transition: bottom 0.3s ease-in-out, box-shadow 0.3s ease-in-out, color 0.5s ease-in-out, background 0.6s ease-in-out;
+      transition: bottom 0.3s ease-in-out, box-shadow 0.3s ease-in-out, color 0.5s ease-in-out, background 0.6s ease-in-out;
+      transition: bottom 0.3s ease-in-out, box-shadow 0.3s ease-in-out, color 0.5s ease-in-out, background 0.6s ease-in-out, -webkit-box-shadow 0.3s ease-in-out; }
+      .homeMain .serviceInfoContent .serviceIcon:hover {
+        position: relative;
+        bottom: 5px;
+        -webkit-box-shadow: 0 5px 15px #111211;
+        box-shadow: 0 5px 15px #111211;
+        color: #111211;
+        background: #FFFFFF; }
     .homeMain .serviceInfoContent h3 {
       margin: 0 0 8px; }
       @media (max-width: 1070px) {
@@ -898,7 +926,9 @@ img {
           -ms-flex-align: center;
           align-items: center; } }
     .homeMain .featuredContent .featuredContentImage {
-      width: 55%; }
+      width: 55%;
+      -o-object-fit: cover;
+      object-fit: cover; }
       @media (max-width: 1070px) {
         .homeMain .featuredContent .featuredContentImage {
           width: 50%; } }
@@ -1204,7 +1234,9 @@ img {
       box-shadow: 25px 20px #0CADC0;
       position: relative;
       bottom: 75px;
-      right: 10px; }
+      right: 10px;
+      -o-object-fit: cover;
+      object-fit: cover; }
       @media (max-width: 1080px) {
         .blogMain .blogPost .blogPostImage {
           -webkit-box-shadow: none;
@@ -1260,7 +1292,9 @@ img {
         width: 90%; } }
     .blogMain .newsContent .newsContentImage {
       position: relative;
-      bottom: 20px; }
+      bottom: 20px;
+      -o-object-fit: cover;
+      object-fit: cover; }
       @media (max-width: 1080px) {
         .blogMain .newsContent .newsContentImage {
           position: initial; } }
@@ -1272,6 +1306,9 @@ img {
     @media (max-width: 960px) {
       .blogMain .newsContent .missionDescription {
         text-align: center; } }
+    @media (max-width: 960px) {
+      .blogMain .newsContent .recentPostDescription {
+        margin-top: 50px; } }
     .blogMain .newsContent h6 {
       color: #FFFFFF;
       margin: 5px 0 0; }
@@ -1338,7 +1375,9 @@ img {
     .blogMain .comments .userComment:nth-of-type(2) {
       margin-bottom: 30px; }
     .blogMain .comments .userImage {
-      width: 10%; }
+      width: 10%;
+      -o-object-fit: cover;
+      object-fit: cover; }
       @media (max-width: 940px) {
         .blogMain .comments .userImage {
           width: 30%; } }
@@ -1394,13 +1433,17 @@ img {
       color: #111211;
       -webkit-transition: opacity 0.3s;
       -o-transition: opacity 0.3s;
-      transition: opacity 0.3s; }
+      transition: opacity 0.3s;
+      font-size: 0.8rem; }
       .blogMain .comments .name:hover, .blogMain .comments .emailAddress:hover {
         border-bottom: 1px solid #21404f;
         opacity: 0.5; }
       .blogMain .comments .name:focus, .blogMain .comments .emailAddress:focus {
         border-bottom: 1px solid #21404f;
         color: #111211; }
+      @media (max-width: 720px) {
+        .blogMain .comments .name, .blogMain .comments .emailAddress {
+          font-size: 0.7rem; } }
       @media (max-width: 560px) {
         .blogMain .comments .name, .blogMain .comments .emailAddress {
           width: 100%; } }
@@ -1417,13 +1460,17 @@ img {
       border: 1px solid #0CADC0;
       -webkit-transition: opacity 0.3s;
       -o-transition: opacity 0.3s;
-      transition: opacity 0.3s; }
+      transition: opacity 0.3s;
+      font-size: 0.8rem; }
       .blogMain .comments .comment:hover {
         border: 1px solid #21404f;
         opacity: 0.5; }
       .blogMain .comments .comment:focus {
         border-bottom: 1px solid #21404f;
         color: #111211; }
+      @media (max-width: 720px) {
+        .blogMain .comments .comment {
+          font-size: 0.7rem; } }
       @media (max-width: 420px) {
         .blogMain .comments .comment {
           padding: 20px 10px 15px 10px; } }

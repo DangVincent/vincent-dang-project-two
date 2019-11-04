@@ -31,9 +31,6 @@ h2 {
     @include fontSize1(2.9rem);
     line-height: 68px;
     flex: 2 0 auto;
-    @media (max-width: 810px) {
-        font-size: 2rem;
-    }
 }
 h3 {
     @include fontSize1(2.15rem);

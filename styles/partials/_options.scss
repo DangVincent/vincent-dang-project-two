@@ -1,0 +1,28 @@
+// DEFAULT OPTIONS
+
+// Prefix for Hover class names
+$nameSpace: 'hvr' !default;
+
+// Durations
+$fastDuration: .1s !default;
+$mediumDuration: .3s !default;
+$slowDuration: .5s !default;
+
+// Curl dimensions
+$curlWidth: 25px !default;
+$curlHeight: 25px !default;
+
+// Curl colors
+$revealAreaColor: $tertiaryColour !default;    // reveal area behind the curl
+$curlLineColor: $secondaryColour !default;       // crease line
+$curlTransitionColor: $secondaryColour !default;	// color transitioning from crease line to final color
+$curlLastColor: $secondaryColour !default;		// final color of the back of the curl
+
+// Browser Prefixes - Which CSS prefixes should be used?
+$webkit: true !default;
+$moz: false !default;
+$ms: false !default;
+$o: false !default;
+
+// Compile with or without classes
+$includeClasses: true !default;

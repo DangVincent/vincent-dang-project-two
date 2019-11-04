@@ -189,7 +189,6 @@
                 bottom: 5px;
                 box-shadow: 0 5px 15px $quaternaryColour;
                 color: $quaternaryColour;
-                background: $accentColour;
             }
         }
         h3 {
@@ -325,11 +324,9 @@
             background: $tertiaryColour;
             padding: 5px 20px;
             margin-top: 10px;
-            transition: text-shadow 0.8s, background 0.3s, color 0.3s;
+            transition: text-shadow 0.8s, color 0.3s;
             &:hover {
                 text-shadow: 2px 2px 1px $primaryColour;
-                background: $secondaryColour;
-                color: $accentColour;
             }
             @media (max-width: 1070px) {
                 font-size: 0.8rem;

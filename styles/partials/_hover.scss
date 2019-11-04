@@ -1,0 +1,53 @@
+// hover animations are from https://github.com/IanLunn/Hover/blob/master/README.md#hovercss
+/*!
+ * Hover.css (http://ianlunn.github.io/Hover/)
+ * Version: 2.3.2
+ * Author: Ian Lunn @IanLunn
+ * Author URL: http://ianlunn.co.uk/
+ * Github: https://github.com/IanLunn/Hover
+
+ * Hover.css Copyright Ian Lunn 2017. Generated with Sass.
+ */
+
+@import "options";
+@import "mixins";
+@import "hacks";
+
+/* BACKGROUND TRANSITIONS */
+@import "effects/background-transitions/bounceToRight";
+@if $includeClasses {
+	.#{$nameSpace}BounceToRight {
+		@include bounceToRight();
+	}
+}
+
+@import "effects/background-transitions/bounceToLeft";
+@if $includeClasses {
+	.#{$nameSpace}BounceToLeft {
+		@include bounceToLeft();
+	}
+}
+
+/* BORDER TRANSITIONS */
+@import "effects/border-transitions/underlineFromLeft";
+@if $includeClasses {
+	.#{$nameSpace}UnderlineFromLeft {
+		@include underlineFromLeft();
+	}
+}
+
+/* ICONS */
+@import "effects/icons/iconBounce";
+@if $includeClasses {
+	.#{$nameSpace}IconBounce {
+		@include iconBounce();
+	}
+}
+
+/* CURLS */
+@import "effects/curls/curlBottomRight";
+@if $includeClasses {
+	.#{$nameSpace}CurlBottomRight {
+		@include curlBottomRight();
+	}
+}

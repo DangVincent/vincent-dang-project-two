@@ -146,6 +146,222 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   overflow: hidden; }
 
 /*!
+ * Hover.css (http://ianlunn.github.io/Hover/)
+ * Version: 2.3.2
+ * Author: Ian Lunn @IanLunn
+ * Author URL: http://ianlunn.co.uk/
+ * Github: https://github.com/IanLunn/Hover
+
+ * Hover.css Copyright Ian Lunn 2017. Generated with Sass.
+ */
+/* BACKGROUND TRANSITIONS */
+/* Bounce To Right */
+.hvrBounceToRight {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  -webkit-transition-property: color;
+  -o-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.8s;
+  -o-transition-duration: 0.8s;
+  transition-duration: 0.8s; }
+  .hvrBounceToRight:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #0CADC0;
+    -webkit-transform: scaleX(0);
+    -ms-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 0 50%;
+    -ms-transform-origin: 0 50%;
+    transform-origin: 0 50%;
+    -webkit-transition-property: transform;
+    -webkit-transition-property: -webkit-transform;
+    transition-property: -webkit-transform;
+    -o-transition-property: transform;
+    transition-property: transform;
+    transition-property: transform, -webkit-transform;
+    -webkit-transition-duration: 0.8s;
+    -o-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+    -webkit-transition-timing-function: ease-in-out;
+    -o-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out; }
+  .hvrBounceToRight:hover, .hvrBounceToRight:focus, .hvrBounceToRight:active {
+    color: #FFFFFF; }
+    .hvrBounceToRight:hover:before, .hvrBounceToRight:focus:before, .hvrBounceToRight:active:before {
+      -webkit-transform: scaleX(1);
+      -ms-transform: scaleX(1);
+      transform: scaleX(1);
+      -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+      -o-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+      transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66); }
+
+/* Bounce To Left */
+.hvrBounceToLeft {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  -webkit-transition-property: color;
+  -o-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.8s;
+  -o-transition-duration: 0.8s;
+  transition-duration: 0.8s; }
+  .hvrBounceToLeft:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #0CADC0;
+    -webkit-transform: scaleX(0);
+    -ms-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 100% 50%;
+    -ms-transform-origin: 100% 50%;
+    transform-origin: 100% 50%;
+    -webkit-transition-property: transform;
+    -webkit-transition-property: -webkit-transform;
+    transition-property: -webkit-transform;
+    -o-transition-property: transform;
+    transition-property: transform;
+    transition-property: transform, -webkit-transform;
+    -webkit-transition-duration: 0.8s;
+    -o-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+    -webkit-transition-timing-function: ease-in-out;
+    -o-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out; }
+  .hvrBounceToLeft:hover, .hvrBounceToLeft:focus, .hvrBounceToLeft:active {
+    color: #FFFFFF; }
+    .hvrBounceToLeft:hover:before, .hvrBounceToLeft:focus:before, .hvrBounceToLeft:active:before {
+      -webkit-transform: scaleX(1);
+      -ms-transform: scaleX(1);
+      transform: scaleX(1);
+      -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+      -o-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+      transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66); }
+
+/* BORDER TRANSITIONS */
+/* Underline From Left */
+.hvrUnderlineFromLeft {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden; }
+  .hvrUnderlineFromLeft:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 100%;
+    bottom: 0;
+    background: #0CADC0;
+    height: 2px;
+    -webkit-transition-property: right;
+    -o-transition-property: right;
+    transition-property: right;
+    -webkit-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-timing-function: ease-out;
+    -o-transition-timing-function: ease-out;
+    transition-timing-function: ease-out; }
+  .hvrUnderlineFromLeft:hover:before, .hvrUnderlineFromLeft:focus:before, .hvrUnderlineFromLeft:active:before {
+    right: 0; }
+
+/* ICONS */
+/* Icon Bounce */
+.hvrIconBounce {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s; }
+  .hvrIconBounce .hvrIcon {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    -webkit-transition-property: -webkit-transform;
+    transition-property: -webkit-transform;
+    -o-transition-property: transform;
+    transition-property: transform;
+    transition-property: transform, -webkit-transform;
+    -webkit-transition-timing-function: ease-out;
+    -o-transition-timing-function: ease-out;
+    transition-timing-function: ease-out; }
+  .hvrIconBounce:hover .hvrIcon, .hvrIconBounce:focus .hvrIcon, .hvrIconBounce:active .hvrIcon {
+    -webkit-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transform: scale(1.3);
+    -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+    -o-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+    transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36); }
+
+/* CURLS */
+/* Curl Bottom Right */
+.hvrCurlBottomRight {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative; }
+  .hvrCurlBottomRight:before {
+    pointer-events: none;
+    position: absolute;
+    content: '';
+    height: 0;
+    width: 0;
+    bottom: 0;
+    right: 0;
+    background: #CCEDFB;
+    /* IE9 */
+    background: -webkit-linear-gradient(135deg, #CCEDFB 45%, #0CADC0 50%, #0CADC0 56%, #0CADC0 80%);
+    background: -o-linear-gradient(135deg, #CCEDFB 45%, #0CADC0 50%, #0CADC0 56%, #0CADC0 80%);
+    background: linear-gradient(315deg, #CCEDFB 45%, #0CADC0 50%, #0CADC0 56%, #0CADC0 80%);
+    -webkit-box-shadow: -1px -1px 1px rgba(0, 0, 0, 0.4);
+    box-shadow: -1px -1px 1px rgba(0, 0, 0, 0.4);
+    -webkit-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-property: width, height;
+    -o-transition-property: width, height;
+    transition-property: width, height; }
+  .hvrCurlBottomRight:hover:before, .hvrCurlBottomRight:focus:before, .hvrCurlBottomRight:active:before {
+    width: 25px;
+    height: 25px; }
+
+/*!
  * Hamburgers
  * @description Tasty CSS-animated hamburgers
  * @author Jonathan Suh @jonsuh
@@ -153,6 +369,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
  * @link https://github.com/jonsuh/hamburgers
  */
 .hamburger {
+  z-index: 20;
   padding: 5px 5px;
   display: none;
   cursor: pointer;
@@ -484,6 +701,7 @@ img {
         .blogHeader .wrapper .headerLinks .menu.show,
         .contactHeader .wrapper .headerLinks .menu.show,
         .homeHeader .wrapper .headerLinks .menu.show {
+          z-index: 20;
           margin: 0;
           display: block;
           background: #0CADC0;
@@ -562,13 +780,12 @@ img {
           color: #21404f;
           -webkit-transition: text-shadow 0.3s;
           -o-transition: text-shadow 0.3s;
-          transition: text-shadow 0.3s; }
+          transition: text-shadow 0.3s;
+          padding-bottom: 5px; }
           .blogHeader .wrapper .headerLinks .menu .hLink:hover,
           .contactHeader .wrapper .headerLinks .menu .hLink:hover,
           .homeHeader .wrapper .headerLinks .menu .hLink:hover {
-            padding-bottom: 5px;
-            text-shadow: 1px 2px 1px #0CADC0;
-            border-bottom: 2px solid #0CADC0; }
+            text-shadow: 1px 2px 1px #0CADC0; }
 
 .homeMain {
   background: #CCEDFB; }
@@ -806,8 +1023,7 @@ img {
         bottom: 5px;
         -webkit-box-shadow: 0 5px 15px #111211;
         box-shadow: 0 5px 15px #111211;
-        color: #111211;
-        background: #FFFFFF; }
+        color: #111211; }
     .homeMain .serviceInfoContent h3 {
       margin: 0 0 8px; }
       @media (max-width: 1070px) {
@@ -972,13 +1188,11 @@ img {
       background: #CCEDFB;
       padding: 5px 20px;
       margin-top: 10px;
-      -webkit-transition: text-shadow 0.8s, background 0.3s, color 0.3s;
-      -o-transition: text-shadow 0.8s, background 0.3s, color 0.3s;
-      transition: text-shadow 0.8s, background 0.3s, color 0.3s; }
+      -webkit-transition: text-shadow 0.8s, color 0.3s;
+      -o-transition: text-shadow 0.8s, color 0.3s;
+      transition: text-shadow 0.8s, color 0.3s; }
       .homeMain .featuredContent .readMore:hover {
-        text-shadow: 2px 2px 1px #21404f;
-        background: #0CADC0;
-        color: #FFFFFF; }
+        text-shadow: 2px 2px 1px #21404f; }
       @media (max-width: 1070px) {
         .homeMain .featuredContent .readMore {
           font-size: 0.8rem; } }

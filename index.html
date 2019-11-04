@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" media="all">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Pacifico&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
     integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
@@ -20,16 +21,16 @@
                 </div>
                 <ul id="navigation" class="menu">
                     <li>
-                        <a href="#home" class="hLink">home</a>
+                        <a href="#home" class="hLink hvrUnderlineFromLeft">home</a>
                     </li>
                     <li>
-                        <a href="#about" class="hLink">about</a>
+                        <a href="#about" class="hLink hvrUnderlineFromLeft">about</a>
                     </li>
                     <li>
-                        <a href="blog.html" class="hLink">blog</a>
+                        <a href="blog.html" class="hLink hvrUnderlineFromLeft">blog</a>
                     </li>
                     <li>
-                        <a href="contact.html" class="hLink">contact</a>
+                        <a href="contact.html" class="hLink hvrUnderlineFromLeft">contact</a>
                     </li>
                 </ul>
                 <button class="hamburger hamburgerEmphatic" type="button" aria-label="Menu" aria-controls="navigation" aria-expanded="false">
@@ -56,7 +57,7 @@
                 <div class="newTechniquesDescription" id="about">
                     <h3>Learn new techniques</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla pulvinar tortor nulla elementum eleifend. Vestibulum consequat vestibulum felis pharetra luctus. Quisque interdum orci quis convallis dapibus nulla pulvinar tortor. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla pulvinar tortor nulla elementum eleifend. Vestibulum consequat.</p>
-                    <button class="findOutMore">find out more</button>
+                    <button class="findOutMore hvrCurlBottomRight">find out more</button>
                 </div> 
             </div>
         </section>
@@ -80,8 +81,8 @@
         <section class="serviceInfoContent">
             <div class="wrapper">
                 <div class="serviceInfo">
-                    <div class="serviceIcon">
-                        <i class="fas fa-calendar-check" aria-hidden="true" aria-label="Upcoming events"></i>
+                    <div class="serviceIcon hvrIconBounce">
+                        <i class="fas fa-calendar-check hvrIcon" aria-hidden="true" aria-label="Upcoming events"></i>
                     </div>
                     <div class="serviceInfoDescription">
                         <h3>Upcoming Events</h3>
@@ -89,8 +90,8 @@
                     </div>
                 </div>
                 <div class="serviceInfo">
-                    <div class="serviceIcon">
-                        <i class="fas fa-users" aria-hidden="true" aria-label="Community"></i>
+                    <div class="serviceIcon hvrIconBounce">
+                        <i class="fas fa-users hvrIcon" aria-hidden="true" aria-label="Community"></i>
                     </div>
                     <div class="serviceInfoDescription">    
                         <h3>Community</h3>
@@ -98,8 +99,8 @@
                     </div>
                 </div>
                 <div class="serviceInfo">
-                    <div class="serviceIcon">
-                        <i class="fas fa-file" aria-hidden="true" aria-label="Blog"></i>
+                    <div class="serviceIcon hvrIconBounce">
+                        <i class="fas fa-file hvrIcon" aria-hidden="true" aria-label="Blog"></i>
                     </div>
                     <div class="serviceInfoDescription">
                         <h3>Blog</h3>
@@ -107,8 +108,8 @@
                     </div>
                 </div>
                 <div class="serviceInfo">
-                    <div class="serviceIcon">
-                        <i class="fas fa-phone" aria-hidden="true" aria-label="Get in Touch"></i>
+                    <div class="serviceIcon hvrIconBounce">
+                        <i class="fas fa-phone hvrIcon" aria-hidden="true" aria-label="Get in Touch"></i>
                     </div>
                     <div class="serviceInfoDescription">    
                         <h3>Get in Touch</h3>
@@ -128,7 +129,7 @@
                     <div class="featuredContentDescription">
                         <h5>Discover our online market</h5>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. In et risus nec, orci ornare condimentum. Nam suscipit odio lorem, id vestibulum lacus tristique eu. Sed urna ex, porttitor nec iaculis at, consectetur vel turpis.</p>
-                        <button class="readMore">read more</button>
+                        <button class="readMore hvrBounceToRight">read more</button>
                     </div>
                 </div>
                 <div class="featuredContent2">
@@ -138,7 +139,7 @@
                     <div class="featuredContentDescription">
                         <h5>New locations</h5>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. In et risus nec, orci ornare condimentum. Nam suscipit odio lorem, id vestibulum lacus tristique eu. Sed urna ex, porttitor nec iaculis at, consectetur vel turpis.</p>
-                        <button class="readMore">read more</button>
+                        <button class="readMore hvrBounceToLeft">read more</button>
                     </div>
                 </div>
             </div>
@@ -167,16 +168,16 @@
         </div>
     </footer>
     <!-- Footer content ends here -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <!-- hamburger animation from https://jonsuh.com/hamburgers/ -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script>
-      // Look for .hamburger
+      // Look for .hamburger and .menu
       var hamburger = document.querySelector(".hamburger");
       var menu = document.querySelector(".menu");
       // On click
       hamburger.addEventListener("click", function() {
         var expanded = this.getAttribute("aria-expanded")
-        // Toggle class "is-active"
+        // Toggle class "is-active and show"
         hamburger.classList.toggle("isActive");
         menu.classList.toggle("show");
         // Do something else, like open/close menu

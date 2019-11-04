@@ -1,6 +1,8 @@
+// hamburger button from https://jonsuh.com/hamburgers/
 // Hamburger
 // ==================================================
 .hamburger {
+  z-index: 20;
   padding: $hamburgerPaddingY $hamburgerPaddingX;
   display: none;
   cursor: pointer;

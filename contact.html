@@ -7,6 +7,8 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Pacifico&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
     integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <!-- animations used are from https://michalsnik.github.io/aos/ -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
     <title>Textilee</title>
 </head>
@@ -38,7 +40,7 @@
                   </span>
                 </button>
             </nav>
-            <h1>Get in touch</h1>
+            <h1 data-aos="fade-right" data-aos-easing="ease-in-sine" data-aos-once="true" data-aos-offset="200" data-aos-delay="200">Get in touch</h1>
         </div>
     </header>
     <!-- Header content ends here -->
@@ -46,7 +48,7 @@
     <main class="contactMain">
         <div class="wrapper">
             <!-- Customer Service content starts here -->
-            <section class="customerService">
+            <section class="customerService" data-aos="zoom-in-right" data-aos-easing="ease-in-sine" data-aos-once="true" data-aos-offset="200" data-aos-delay="800">
                 <form action="">
                     <label for="name" class="visuallyHidden">Your name:</label>
                     <input type="text" id="name" name="contact" class="name" placeholder="Name" value="Name">
@@ -96,25 +98,28 @@
         </div>
     </footer>
     <!-- Footer content ends here -->
+    <!-- animations used are from https://michalsnik.github.io/aos/ -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- hamburger animation from https://jonsuh.com/hamburgers/ -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script>
-      // Look for .hamburger and .menu
-      var hamburger = document.querySelector(".hamburger");
-      var menu = document.querySelector(".menu");
-      // On click
-      hamburger.addEventListener("click", function() {
-        var expanded = this.getAttribute("aria-expanded")
-        // Toggle class "is-active and show"
-        hamburger.classList.toggle("isActive");
-        menu.classList.toggle("show");
-        // Do something else, like open/close menu
-        if (expanded === "false") {
-            this.setAttribute("aria-expanded", "true")
-        } else {
-            this.setAttribute("aria-expanded", "false")
-        }
-      });
+        AOS.init();
+        // Look for .hamburger and .menu
+        var hamburger = document.querySelector(".hamburger");
+        var menu = document.querySelector(".menu");
+        // On click
+        hamburger.addEventListener("click", function() {
+            var expanded = this.getAttribute("aria-expanded")
+            // Toggle class "is-active and show"
+            hamburger.classList.toggle("isActive");
+            menu.classList.toggle("show");
+            // Do something else, like open/close menu
+            if (expanded === "false") {
+                this.setAttribute("aria-expanded", "true")
+            } else {
+                this.setAttribute("aria-expanded", "false")
+            }
+        });
     </script>
 </body>
 </html>

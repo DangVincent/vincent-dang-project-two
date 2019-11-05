@@ -1064,17 +1064,18 @@ form {
       font-size: 1rem;
       color: #FFFFFF;
       background: #0CADC0;
-      -webkit-transition: bottom 0.3s ease-in-out, color 0.5s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
-      transition: bottom 0.3s ease-in-out, color 0.5s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
-      -o-transition: bottom 0.3s ease-in-out, box-shadow 0.3s ease-in-out, color 0.5s ease-in-out;
-      transition: bottom 0.3s ease-in-out, box-shadow 0.3s ease-in-out, color 0.5s ease-in-out;
-      transition: bottom 0.3s ease-in-out, box-shadow 0.3s ease-in-out, color 0.5s ease-in-out, -webkit-box-shadow 0.3s ease-in-out; }
+      -webkit-transition: bottom 0.3s ease-in-out, color 0.5s ease-in-out, text-shadow 0.5s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+      transition: bottom 0.3s ease-in-out, color 0.5s ease-in-out, text-shadow 0.5s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+      -o-transition: bottom 0.3s ease-in-out, box-shadow 0.3s ease-in-out, color 0.5s ease-in-out, text-shadow 0.5s ease-in-out;
+      transition: bottom 0.3s ease-in-out, box-shadow 0.3s ease-in-out, color 0.5s ease-in-out, text-shadow 0.5s ease-in-out;
+      transition: bottom 0.3s ease-in-out, box-shadow 0.3s ease-in-out, color 0.5s ease-in-out, text-shadow 0.5s ease-in-out, -webkit-box-shadow 0.3s ease-in-out; }
       .homeMain .serviceInfoContent .serviceIcon:hover {
         position: relative;
         bottom: 5px;
-        -webkit-box-shadow: 0 5px 15px #111211;
-        box-shadow: 0 5px 15px #111211;
-        color: #111211; }
+        -webkit-box-shadow: 0 6px 20px #111211;
+        box-shadow: 0 6px 20px #111211;
+        text-shadow: 2px 2px 1px #21404f;
+        color: #CCEDFB; }
     .homeMain .serviceInfoContent h3 {
       margin: 0 0 8px; }
       @media (max-width: 1070px) {

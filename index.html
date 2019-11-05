@@ -8,6 +8,8 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Pacifico&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
     integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <!-- animations used are from https://michalsnik.github.io/aos/ -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
     <title>Textilee</title>
 </head>
@@ -39,9 +41,9 @@
                   </span>
                 </button>
             </nav>
-            <h2>Textiles for all projects in mind</h2>
+            <h2 data-aos="fade-right" data-aos-easing="ease-in-sine" data-aos-delay="400">Textiles for all projects in mind</h2>
             <div class="homeBoxHeaderImage">
-                <img src="assets/home-box-header.png" alt="a row of diffent coloured sewing spools with scissors poking out of the frame">
+                <img src="assets/home-box-header.png" alt="a row of diffent coloured sewing spools with scissors poking out of the frame" data-aos="fade-up-right" data-aos-easing="ease-in-sine" data-aos-offset="300" data-aos-once="true">
             </div>
         </div>
     </header>
@@ -51,10 +53,10 @@
         <!-- New Techniques content starts here -->
         <section class="newTechniquesContent">
             <div class="wrapper">
-                <div class="newTechniquesImage">
+                <div class="newTechniquesImage" data-aos="flip-left" data-aos-easing="ease-in-sine" data-aos-once="true" data-aos-offset="200">
                     <img src="assets/small-box.jpg" alt="a woman sewing a pink dress together with a small sewing kit box">
                 </div>
-                <div class="newTechniquesDescription" id="about">
+                <div class="newTechniquesDescription" data-aos="fade-right" data-aos-easing="ease-in-sine" data-aos-offset="200" data-aos-once="true" id="about">
                     <h3>Learn new techniques</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla pulvinar tortor nulla elementum eleifend. Vestibulum consequat vestibulum felis pharetra luctus. Quisque interdum orci quis convallis dapibus nulla pulvinar tortor. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla pulvinar tortor nulla elementum eleifend. Vestibulum consequat.</p>
                     <button class="findOutMore hvrCurlBottomRight">find out more</button>
@@ -65,13 +67,13 @@
         <!-- Gallery Images content starts here -->
         <section class="galleryContent">
             <div class="wrapper">
-                <div class="galleryImage">
+                <div class="galleryImage" data-aos="flip-up" data-aos-easing="ease-in-sine" data-aos-once="true" data-aos-offset="200">
                     <img src="assets/gallery-image-1.jpg" alt="a top down view of dark colour balls of yarn and sewing spools">
                 </div>
-                <div class="galleryImage">
+                <div class="galleryImage" data-aos="flip-up" data-aos-easing="ease-in-sine" data-aos-once="true" data-aos-offset="200" data-aos-delay="300">
                     <img src="assets/gallery-image-2.jpg" alt="a top down view of a sewing kit lying on a light colour cloth">
                 </div>
-                <div class="galleryImage">
+                <div class="galleryImage" data-aos="flip-up" data-aos-easing="ease-in-sine" data-aos-once="true" data-aos-offset="200" data-aos-delay="500">
                     <img src="assets/gallery-image-3.jpg" alt=" a side view of a collection of sewing spools on a shelve">
                 </div>
             </div>
@@ -84,7 +86,7 @@
                     <div class="serviceIcon hvrIconBounce">
                         <i class="fas fa-calendar-check hvrIcon" aria-hidden="true" aria-label="Upcoming events"></i>
                     </div>
-                    <div class="serviceInfoDescription">
+                    <div class="serviceInfoDescription" data-aos="flip-down" data-aos-easing="ease-in-sine" data-aos-once="true" data-aos-offset="200">
                         <h3>Upcoming Events</h3>
                         <p>Ut felis eros, vehicula eu magna nec, laoreet blandit nisi, Fusce auctor erat ac sagittis mattis. Mauris tempus velit sem, amet imperdiet dolor placerat.</p>
                     </div>
@@ -93,7 +95,7 @@
                     <div class="serviceIcon hvrIconBounce">
                         <i class="fas fa-users hvrIcon" aria-hidden="true" aria-label="Community"></i>
                     </div>
-                    <div class="serviceInfoDescription">    
+                    <div class="serviceInfoDescription" data-aos="flip-down" data-aos-easing="ease-in-sine" data-aos-once="true" data-aos-offset="200">    
                         <h3>Community</h3>
                         <p>Ut felis eros, vehicula eu magna nec, laoreet blandit nisi, Fusce auctor erat ac sagittis mattis. Mauris tempus velit sem, amet imperdiet dolor placerat.</p>
                     </div>
@@ -102,7 +104,7 @@
                     <div class="serviceIcon hvrIconBounce">
                         <i class="fas fa-file hvrIcon" aria-hidden="true" aria-label="Blog"></i>
                     </div>
-                    <div class="serviceInfoDescription">
+                    <div class="serviceInfoDescription" data-aos="flip-down" data-aos-easing="ease-in-sine" data-aos-once="true" data-aos-offset="200">
                         <h3>Blog</h3>
                         <p>Ut felis eros, vehicula eu magna nec, laoreet blandit nisi, Fusce auctor erat ac sagittis mattis. Mauris tempus velit sem, amet imperdiet dolor placerat.</p>
                     </div>
@@ -111,7 +113,7 @@
                     <div class="serviceIcon hvrIconBounce">
                         <i class="fas fa-phone hvrIcon" aria-hidden="true" aria-label="Get in Touch"></i>
                     </div>
-                    <div class="serviceInfoDescription">    
+                    <div class="serviceInfoDescription" data-aos="flip-down" data-aos-easing="ease-in-sine" data-aos-once="true" data-aos-offset="200">    
                         <h3>Get in Touch</h3>
                         <p>Ut felis eros, vehicula eu magna nec, laoreet blandit nisi, Fusce auctor erat ac sagittis mattis. Mauris tempus velit sem, amet imperdiet dolor placerat.</p>
                     </div>
@@ -123,20 +125,20 @@
         <section class="featuredContent">
             <div class="wrapper">
                 <div class="featuredContent1">
-                    <div class="featuredContentImage">
-                        <img src="assets/left-image.jpg" alt="a top down view of a pink wrinkled cloth">
+                    <div class="featuredContentImage" data-aos="fade-down-right" data-aos-easing="ease-in-sine" data-aos-once="true" data-aos-offset="200">
+                        <img src="assets/left-image.jpg" alt="a top down view of a pink wrinkled cloth" >
                     </div>
-                    <div class="featuredContentDescription">
+                    <div class="featuredContentDescription" data-aos="flip-left" data-aos-easing="ease-in-sine" data-aos-once="true" data-aos-offset="200" data-aos-delay="200">
                         <h5>Discover our online market</h5>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. In et risus nec, orci ornare condimentum. Nam suscipit odio lorem, id vestibulum lacus tristique eu. Sed urna ex, porttitor nec iaculis at, consectetur vel turpis.</p>
                         <button class="readMore hvrBounceToRight">read more</button>
                     </div>
                 </div>
                 <div class="featuredContent2">
-                    <div class="featuredContentImage">
-                        <img src="assets/right-image.jpg" alt="a body view of a woman taking measurements of a product">
+                    <div class="featuredContentImage" data-aos="fade-up-left" data-aos-easing="ease-in-sine" data-aos-once="true" data-aos-offset="200">
+                        <img src="assets/right-image.jpg" alt="a body view of a woman taking measurements of a product" >
                     </div>
-                    <div class="featuredContentDescription">
+                    <div class="featuredContentDescription" data-aos="flip-right" data-aos-easing="ease-in-sine" data-aos-once="true" data-aos-offset="200" data-aos-delay="200">
                         <h5>New locations</h5>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. In et risus nec, orci ornare condimentum. Nam suscipit odio lorem, id vestibulum lacus tristique eu. Sed urna ex, porttitor nec iaculis at, consectetur vel turpis.</p>
                         <button class="readMore hvrBounceToLeft">read more</button>
@@ -151,7 +153,7 @@
          <!-- Search Styles content starts here -->
         <section class="searchStyleContent">
             <div class="wrapper">
-                <div class="searchStyleDescription">
+                <div class="searchStyleDescription" data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-once="true" data-aos-offset="200">
                     <h3>Search by style</h3>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. In et risus nec orci ornare condimentum. Nam suscipit odio lorem, id vestibulum lacus tristique eu. Sed urna ex, porttitor nec iaculis at, consectetur vel turpis. Vestibulum ultrices, felis in lacinia porttitor, tortor metus convallis augue, at fermentum diam erat nec quam. Nulla facilisi.</p>
                     <button class="findOutMore">find out more</button>
@@ -168,25 +170,28 @@
         </div>
     </footer>
     <!-- Footer content ends here -->
+    <!-- animations used are from https://michalsnik.github.io/aos/ -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- hamburger animation from https://jonsuh.com/hamburgers/ -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script>
-      // Look for .hamburger and .menu
-      var hamburger = document.querySelector(".hamburger");
-      var menu = document.querySelector(".menu");
-      // On click
-      hamburger.addEventListener("click", function() {
-        var expanded = this.getAttribute("aria-expanded")
-        // Toggle class "is-active and show"
-        hamburger.classList.toggle("isActive");
-        menu.classList.toggle("show");
-        // Do something else, like open/close menu
-        if (expanded === "false") {
-            this.setAttribute("aria-expanded", "true")
-        } else {
-            this.setAttribute("aria-expanded", "false")
-        }
-      });
+        AOS.init();
+        // Look for .hamburger and .menu
+        var hamburger = document.querySelector(".hamburger");
+        var menu = document.querySelector(".menu");
+        // On click
+        hamburger.addEventListener("click", function() {
+            var expanded = this.getAttribute("aria-expanded")
+            // Toggle class "is-active and show"
+            hamburger.classList.toggle("isActive");
+            menu.classList.toggle("show");
+            // Do something else, like open/close menu
+            if (expanded === "false") {
+                this.setAttribute("aria-expanded", "true")
+            } else {
+                this.setAttribute("aria-expanded", "false")
+            }
+        });
     </script>
 </body>
 </html>

@@ -1,0 +1,119 @@
+//Contact Main styles starts here
+.contactMain {
+    background: $tertiaryColour;
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        @media (max-width: 720px) {
+            padding-top: 50px;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    .customerService {
+        width: 75%;
+        background: $primaryColour;
+        padding: 35px 50px;
+        position: relative;
+        box-shadow: 20px 20px $secondaryColour;
+        bottom: 120px;
+        right: 55px;
+        @media (max-width: 720px) {
+            position: initial;
+            box-shadow: none;
+            width: 85%;
+        }
+        @media (max-width: 560px) {
+            padding: 35px 25px;
+            width: 100%;
+        }
+        form {
+            @media (max-width: 560px) {
+                font-size: 0.7rem;
+            }
+        }
+        .name {
+            color: $accentColour;
+            &:hover {
+                border-bottom: 1px solid $tertiaryColour;
+                opacity: 0.5;
+            }
+            &:focus {
+                border-bottom: 1px solid $secondaryColour;
+                color: $accentColour;
+            }
+        }
+        .message {
+            color: $accentColour;
+            &:hover {
+                border: 1px solid $tertiaryColour;
+                opacity: 0.5;
+            }
+            &:focus {
+                border-bottom: 1px solid $secondaryColour;
+                color: $accentColour;
+            }
+        }
+        .submit {
+            background: $tertiaryColour;
+            color: $quinaryColour;
+            transition: text-shadow 0.8s, background 0.3s, color 0.3s, box-shadow 0.5s;
+            &:hover {
+                color: $accentColour;
+                text-shadow: 2px 2px 1px $primaryColour;
+                background: $secondaryColour;
+                box-shadow: 0 10px 12px $quaternaryColour;
+            }
+            @media (max-width: 560px) {
+                font-size: 0.7rem;
+            }
+        }
+    }
+    .contactInfo {
+        width: 20%;
+        align-self: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        @media (max-width: 720px) {
+            width: 85%;
+            align-self: initial;
+            margin: 20px 0;
+        }
+        ul {
+            display: flex;
+            justify-content: space-between;
+            width: 60%;
+            @media (max-width: 720px) {
+                width: 100%;
+                justify-content: space-evenly;
+            }
+        }
+        .socialMediaLink {
+            color: $primaryColour;
+            &:hover {
+                text-shadow: 2px 2px 1px $secondaryColour;
+            }
+        }
+        p {
+            margin: 0;
+            line-height: 18px;
+            font-size: 0.7rem;
+            color: $quinaryColour;
+            &:nth-of-type(1) {
+                margin: 10px 0;
+            }
+            @media (max-width: 720px) {
+                font-size: 0.8rem;
+                line-height: 22px;
+                text-align: center;
+            }
+            @media (max-width: 560px) {
+                font-size: 0.7rem;
+            }
+        }
+        
+    }
+}
+//Contact Main styles ends here

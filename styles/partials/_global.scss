@@ -1,4 +1,4 @@
-//Mixins starts here
+// Global mixins starts here
 @mixin fontSize1($sizeValue) {
     font-family: 'Pacifico', cursive;
     font-size: $sizeValue;
@@ -14,7 +14,7 @@
     font-size: $sizeValue;
     font-weight: '700';
 }
-//Mixins ends here
+//Global mixins ends here
 //Global styles starts here
 html {
     font-size: 125%;
@@ -81,6 +81,7 @@ button {
 img {
     width: 100%;
     display: block;
+    object-fit: cover;
 }
 .logo {
     @include fontSize1(1.5rem);

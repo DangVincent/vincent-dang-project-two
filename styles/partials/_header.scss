@@ -3,7 +3,7 @@
     background: url(../../assets/header-home.jpg) bottom no-repeat;
     min-height: 700px;
     @media (max-width: 1060px) {
-        min-height: 500px;
+        min-height: 400px;
     }
     @media (max-width: 810px) {
         background-position: 60%;
@@ -43,11 +43,8 @@
         transform: scale(1.3, 1.4);
         width: 57%;
         object-fit: cover;
-        @media (max-width: 1070px) {
-            position: initial;
-            transform: none;
-        }
         @media (max-width: 1060px) {
+
             display: none;
         }
     }
@@ -68,8 +65,17 @@
 .blogHeader {
     background: url(../../assets/blog-header.jpg) right no-repeat;
     min-height: 400px;
-    @media (max-width: 960px){
+    @media (max-width: 960px) {
         min-height: 300px;
+    }
+    @media (max-width: 810px) {
+        background-position: 60%;
+    }
+    @media (max-width: 630px) {
+        background-position: 40%;
+    }
+    @media (max-width: 470px) {
+        background-position: 30%;
     }
     h1 {
         margin: 80px 0 0;
@@ -99,19 +105,23 @@
                     position: fixed;
                     top: 0;
                     right: 0;
-                    bottom: 65%;
+                    bottom: 60%;
                     padding: 50px;
+                    border: 1px solid $quaternaryColour;
+                    border-top: none;
                     border-bottom-left-radius: 50px;
                     @media (max-width: 560px) {
-                        padding: 50px 30px 30px;
+                        padding: 60px 30px 30px;
                     }
                 }
                 li {
+                    border-bottom: 1px solid $quaternaryColour;
                     margin-bottom: 16px;
                     transition: transform 0.3s ease-in-out;
                     &:hover {
                         opacity: 0.6;
                         transform: scale(1.1);
+                        border-bottom: 1px solid $accentColour;
                     }
                 }
             } 
@@ -121,10 +131,11 @@
                     margin-bottom: 16px;
                 }
                 a {
-                    color: $primaryColour;
+                    color: $quinaryColour;
                     transition: color 0.3s;
                     &:hover {
                         color: $secondaryColour;
+                        text-shadow: 1px 1px 1px $quaternaryColour;
                     }
                 }
             }

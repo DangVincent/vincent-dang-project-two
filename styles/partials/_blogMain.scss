@@ -1,0 +1,312 @@
+// Blog Main styles starts here
+.blogMain {
+    background: $tertiaryColour;
+    .wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        @media (max-width: 1080px) {
+            padding-top: 50px;
+            justify-content: space-around;
+        }
+        @media (max-width: 960px) {
+        }
+    }
+    .blogPost {
+        width: 75%;
+        background: $primaryColour;
+        position: relative;
+        right: 136px;
+        box-shadow: 0 0 0 15px $secondaryColour;
+        @media (max-width: 1080px) {
+            border: 1px solid $quaternaryColour;
+            position: initial;
+            box-shadow: none;
+            width: 70%;
+        }
+        @media (max-width: 960px) {
+            width: 95%;
+        }
+        @media (max-width: 430px) {
+            width: 100%;
+        }
+        .blogPostImage {
+            box-shadow: 24px 20px $secondaryColour;
+            position: relative;
+            bottom: 75px;
+            right: 8px;
+            @media (max-width: 1080px) {
+                box-shadow: 0 10px 10px $quaternaryColour;
+                position: initial;
+            }
+        }
+        .blogPostDescription {
+            padding: 0 30px 50px 135px;
+            @media (max-width: 1080px) {
+                padding: 0 0 0 10px;
+            }
+            @media (max-width: 960px) {
+                padding: 0 30px 20px 30px;
+            }
+        }
+        h3 {
+            color: $accentColour;
+            margin: 0 0 10px;
+            @media (max-width: 1080px) {
+                margin: 15px 0 10px;
+            }
+            @media (max-width: 960px) {
+                text-align: center;
+                margin: 10px 0;
+            }
+            @media (max-width: 710px) {
+                font-size: 1.75rem;
+            }
+            @media (max-width: 360px) {
+                font-size: 1.2rem;
+            }
+        }
+        p {
+            color: $accentColour;
+            margin: 0 0 20px;
+            font-size: 0.8rem;
+            @media (max-width: 710px) {
+                font-size: 0.7rem;
+            }
+        }
+    }
+    .newsContent {
+        width: 25%;
+        background: $primaryColour;
+        position: relative;
+        left: 135px;
+        top: 200px;
+        padding: 0 0 15px 10px;
+        @media (max-width: 1330px) {
+            left: 0;
+        }
+        @media (max-width: 1080px) {
+            border: 1px solid $quaternaryColour;
+            position: initial;
+            padding: 0 0 15px 0;
+        }
+        @media (max-width: 960px) {
+            margin-top: 50px;
+            width: 30%;
+            order: 1;
+            padding: 0;
+            flex: 0 1 auto;
+        }
+        @media (max-width: 838px) {
+            display: none;
+        }
+        .newsContentImage {
+            position: relative;
+            bottom: 20px;
+            @media (max-width: 1080px) {
+                position: initial;
+                box-shadow: 0 5px 10px $quaternaryColour;
+            }
+        }
+        .newsPost {
+            @media (max-width: 1080px) {
+                padding-left: 10px;
+            }
+            @media (max-width: 960px) {
+                width: 90%;
+                padding: 30px 0 77px;
+                margin: 0 auto;
+            }
+            @media (max-width: 940px) {
+                padding: 30px 0 20px;
+            }
+        }
+        .missionDescription {
+            @media (max-width: 960px) {
+                text-align: center;
+            }
+        }
+        .recentPostDescription {
+            @media (max-width: 960px) {
+                margin-top: 50px;
+            }
+        }
+        h6 {
+            color: $accentColour;
+            margin: 5px 0 0;
+            @media (max-width: 960px) {
+                text-align: center;
+            }
+            @media (max-width: 360px) {
+                font-size: 1.1rem;
+            }
+        }
+        .recentPostsList {
+            @media (max-width: 960px) {
+                margin-left: 20px;
+            }
+        }
+        li {
+            list-style-type: disc;
+            color: $accentColour;
+            margin-left: 20px;
+            @media (max-width: 960px) {
+                margin: 0;
+                // width: 40%;
+            }
+        }
+        p {
+            color: $accentColour;
+            margin: 0;
+            font-size: 0.7rem;
+            line-height: 20px;
+        }
+    }
+    .comments {
+        width: 75%;
+        margin: 50px 0;
+        @media (max-width: 1080px) {
+            width: 95%;
+        }
+        @media (max-width: 960px) {
+            width: 60%;
+        }
+        @media (max-width: 838px) {
+            width: 95%;
+        }
+        @media (max-width: 360px) {
+            width: 90%;
+        }
+        h4 {
+            text-transform: capitalize;
+            margin: 0;
+            color: $quinaryColour;
+            @media (max-width: 720px) {
+                font-size: 1.75rem;
+            }
+            @media (max-width: 360px) {
+                font-size: 1.2rem;
+            }
+        }
+        .userComment {
+            display: flex;
+            margin: 20px 0 60px;
+            @media (max-width: 940px) {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+        .userComment:nth-of-type(2) {
+            margin-bottom: 30px;
+        }
+        .userImage {
+            width: 10%;
+            @media (max-width: 940px) {
+                width: 20%;
+                box-shadow: 0 5px 10px $quaternaryColour;
+                border: 1px solid $quaternaryColour;
+            }
+            @media (max-width: 840px) {
+                width: 18%;
+            }
+            @media (max-width: 650px) {
+                width: 20%;
+            }
+            @media (max-width: 540px) {
+                width: 25%;
+            }
+            @media (max-width: 420px) {
+                width: 30%;
+            }
+            @media (max-width: 650px) {
+                width: 35%;
+            }
+        }
+        .userCommentDescription{
+            width: 90%;
+            padding: 0 140px 0 20px;
+            @media (max-width: 1080px) {
+                padding: 0 100px 0 20px
+            }
+            @media (max-width: 960px) {
+                padding: 0 0 0 20px;
+            }
+            @media (max-width: 940px) {
+                width: 100%;
+                margin-top: 20px;
+            }
+        } 
+        p:nth-of-type(1) {
+            font-weight: bold;
+            margin-top: 5px;
+        }
+        p {
+            font-size: 0.8rem;
+            line-height: 23px;
+            color: $quinaryColour;
+            @media (max-width: 710px) {
+                font-size: 0.7rem;
+            }
+        }
+        form {
+            width: 80%;
+            @media (max-width: 1080px) {
+                width: 95%;
+            }
+            @media (max-width: 960px) {
+                width: 100%;
+            }
+            @media (max-width: 720px) {
+                font-size: 0.7rem;
+            }
+            @media (max-width: 560px) {
+                flex-direction: column;
+            }
+        }
+        .name {
+            color: $quaternaryColour;
+            font-size: 0.8rem;
+            &:hover {
+                border-bottom: 1px solid $primaryColour;
+                opacity: 0.5;
+            }
+            &:focus {
+                border-bottom: 1px solid $primaryColour;
+                color: $quaternaryColour;
+            }
+            @media (max-width: 720px) {
+                font-size: 0.7rem;
+            }
+        }
+        .message {
+            color: $quaternaryColour;
+            font-size: 0.8rem;
+            &:hover {
+                border: 1px solid $primaryColour;
+                opacity: 0.5;
+            }
+            &:focus {
+                border-bottom: 1px solid $primaryColour;
+                color: $quaternaryColour;
+            }
+            @media (max-width: 720px) {
+                font-size: 0.7rem;
+            }
+        }
+        .submit {
+            padding: 5px 0;
+            background: $primaryColour;
+            color: $accentColour;
+            transition: text-shadow 0.8s, background 0.3s, box-shadow 0.5s;
+            &:hover {
+                text-shadow: 2px 2px 1px $primaryColour;
+                background: $secondaryColour;
+                box-shadow: 0 10px 12px $quaternaryColour;
+            }
+            @media (max-width: 720px) {
+                font-size: 0.7rem;
+            }
+        }
+    }
+}
+// Blog Main styles ends here

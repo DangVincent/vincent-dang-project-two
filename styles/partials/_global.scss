@@ -93,4 +93,47 @@ img {
     max-width: 1080px;
     margin: 0 auto;
 }
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    @media (max-width: 560px) {
+        flex-direction: column;
+    }
+    .name {
+        padding: 20px 0 15px 20px;
+        width: 45%;
+        background: none;
+        border: none;
+        border-bottom: 1px solid $secondaryColour;
+        transition: opacity 0.3s;
+        @media (max-width: 560px) {
+            width: 100%;
+        }
+        @media (max-width: 420px) {
+            padding: 20px 10px 15px 10px;
+        }
+    }
+    .emailAddress {
+        @extend .name;
+    }
+    .message {
+        resize: none;
+        margin-top: 30px;
+        padding: 20px 0 15px 20px;
+        width: 100%;
+        background: none;
+        border: 1px solid $secondaryColour;
+        transition: opacity 0.3s;
+        @media (max-width: 420px) {
+            padding: 20px 10px 15px 10px;
+        }
+    }
+    .submit {
+        @include fontSize1(1rem);
+        margin-top: 30px;
+        width: 100%;
+        border: none;
+    }
+}
 //Global styles ends here

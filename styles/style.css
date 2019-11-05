@@ -599,6 +599,57 @@ img {
   max-width: 1080px;
   margin: 0 auto; }
 
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+  @media (max-width: 560px) {
+    form {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; } }
+  form .name, form .emailAddress {
+    padding: 20px 0 15px 20px;
+    width: 45%;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #0CADC0;
+    -webkit-transition: opacity 0.3s;
+    -o-transition: opacity 0.3s;
+    transition: opacity 0.3s; }
+    @media (max-width: 560px) {
+      form .name, form .emailAddress {
+        width: 100%; } }
+    @media (max-width: 420px) {
+      form .name, form .emailAddress {
+        padding: 20px 10px 15px 10px; } }
+  form .message {
+    resize: none;
+    margin-top: 30px;
+    padding: 20px 0 15px 20px;
+    width: 100%;
+    background: none;
+    border: 1px solid #0CADC0;
+    -webkit-transition: opacity 0.3s;
+    -o-transition: opacity 0.3s;
+    transition: opacity 0.3s; }
+    @media (max-width: 420px) {
+      form .message {
+        padding: 20px 10px 15px 10px; } }
+  form .submit {
+    font-family: 'Pacifico', cursive;
+    font-size: 1rem;
+    color: #21404f;
+    margin-top: 30px;
+    width: 100%;
+    border: none; }
+
 .homeHeader {
   background: url(../../assets/header-home.jpg) bottom no-repeat;
   min-height: 700px; }
@@ -1013,11 +1064,11 @@ img {
       font-size: 1rem;
       color: #FFFFFF;
       background: #0CADC0;
-      -webkit-transition: bottom 0.3s ease-in-out, color 0.5s ease-in-out, background 0.6s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
-      transition: bottom 0.3s ease-in-out, color 0.5s ease-in-out, background 0.6s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
-      -o-transition: bottom 0.3s ease-in-out, box-shadow 0.3s ease-in-out, color 0.5s ease-in-out, background 0.6s ease-in-out;
-      transition: bottom 0.3s ease-in-out, box-shadow 0.3s ease-in-out, color 0.5s ease-in-out, background 0.6s ease-in-out;
-      transition: bottom 0.3s ease-in-out, box-shadow 0.3s ease-in-out, color 0.5s ease-in-out, background 0.6s ease-in-out, -webkit-box-shadow 0.3s ease-in-out; }
+      -webkit-transition: bottom 0.3s ease-in-out, color 0.5s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+      transition: bottom 0.3s ease-in-out, color 0.5s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+      -o-transition: bottom 0.3s ease-in-out, box-shadow 0.3s ease-in-out, color 0.5s ease-in-out;
+      transition: bottom 0.3s ease-in-out, box-shadow 0.3s ease-in-out, color 0.5s ease-in-out;
+      transition: bottom 0.3s ease-in-out, box-shadow 0.3s ease-in-out, color 0.5s ease-in-out, -webkit-box-shadow 0.3s ease-in-out; }
       .homeMain .serviceInfoContent .serviceIcon:hover {
         position: relative;
         bottom: 5px;
@@ -1275,79 +1326,34 @@ img {
       .contactMain .customerService {
         padding: 35px 25px;
         width: 90%; } }
-    .contactMain .customerService form {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-      -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-      justify-content: space-between; }
-      @media (max-width: 560px) {
-        .contactMain .customerService form {
-          font-size: 0.7rem;
-          -webkit-box-orient: vertical;
-          -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-          flex-direction: column; } }
-    .contactMain .customerService .name, .contactMain .customerService .emailAddress {
-      padding: 20px 0 15px 20px;
-      width: 45%;
-      background: none;
-      border: none;
-      border-bottom: 1px solid #0CADC0;
-      color: #FFFFFF;
-      -webkit-transition: opacity 0.3s;
-      -o-transition: opacity 0.3s;
-      transition: opacity 0.3s; }
-      .contactMain .customerService .name:hover, .contactMain .customerService .emailAddress:hover {
+    @media (max-width: 560px) {
+      .contactMain .customerService form {
+        font-size: 0.7rem; } }
+    .contactMain .customerService .name, .contactMain .customerService form .emailAddress, form .contactMain .customerService .emailAddress {
+      color: #FFFFFF; }
+      .contactMain .customerService .name:hover, .contactMain .customerService form .emailAddress:hover, form .contactMain .customerService .emailAddress:hover {
         border-bottom: 1px solid #CCEDFB;
         opacity: 0.5; }
-      .contactMain .customerService .name:focus, .contactMain .customerService .emailAddress:focus {
+      .contactMain .customerService .name:focus, .contactMain .customerService form .emailAddress:focus, form .contactMain .customerService .emailAddress:focus {
         border-bottom: 1px solid #0CADC0;
         color: #FFFFFF; }
-      @media (max-width: 560px) {
-        .contactMain .customerService .name, .contactMain .customerService .emailAddress {
-          width: 100%; } }
-      @media (max-width: 420px) {
-        .contactMain .customerService .name, .contactMain .customerService .emailAddress {
-          padding: 20px 10px 15px 10px; } }
     .contactMain .customerService .message {
-      resize: none;
-      margin-top: 30px;
-      padding: 20px 0 15px 20px;
-      width: 100%;
-      color: #FFFFFF;
-      background: none;
-      border: 1px solid #0CADC0;
-      -webkit-transition: opacity 0.3s;
-      -o-transition: opacity 0.3s;
-      transition: opacity 0.3s; }
+      color: #FFFFFF; }
       .contactMain .customerService .message:hover {
         border: 1px solid #CCEDFB;
         opacity: 0.5; }
       .contactMain .customerService .message:focus {
         border-bottom: 1px solid #0CADC0;
         color: #FFFFFF; }
-      @media (max-width: 420px) {
-        .contactMain .customerService .message {
-          padding: 20px 10px 15px 10px; } }
     .contactMain .customerService .submit {
-      font-family: 'Pacifico', cursive;
-      font-size: 1rem;
-      color: #21404f;
-      margin-top: 30px;
       background: #CCEDFB;
-      width: 100%;
-      border: none;
       -webkit-transition: text-shadow 0.8s, background 0.3s, color 0.3s;
       -o-transition: text-shadow 0.8s, background 0.3s, color 0.3s;
       transition: text-shadow 0.8s, background 0.3s, color 0.3s; }
       .contactMain .customerService .submit:hover {
+        color: #FFFFFF;
         text-shadow: 2px 2px 1px #21404f;
-        background: #0CADC0;
-        color: #FFFFFF; }
+        background: #0CADC0; }
       @media (max-width: 560px) {
         .contactMain .customerService .submit {
           font-size: 0.7rem; } }
@@ -1617,15 +1623,7 @@ img {
         .blogMain .comments p {
           font-size: 0.7rem; } }
     .blogMain .comments form {
-      width: 80%;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-      -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-      justify-content: space-between; }
+      width: 80%; }
       @media (max-width: 960px) {
         .blogMain .comments form {
           width: 100%; } }
@@ -1638,66 +1636,34 @@ img {
           -webkit-box-direction: normal;
           -ms-flex-direction: column;
           flex-direction: column; } }
-    .blogMain .comments .name, .blogMain .comments .emailAddress {
-      padding: 20px 0 15px 20px;
-      width: 45%;
-      background: none;
-      border: none;
-      border-bottom: 1px solid #0CADC0;
+    .blogMain .comments .name, .blogMain .comments form .emailAddress, form .blogMain .comments .emailAddress {
       color: #111211;
-      -webkit-transition: opacity 0.3s;
-      -o-transition: opacity 0.3s;
-      transition: opacity 0.3s;
       font-size: 0.8rem; }
-      .blogMain .comments .name:hover, .blogMain .comments .emailAddress:hover {
+      .blogMain .comments .name:hover, .blogMain .comments form .emailAddress:hover, form .blogMain .comments .emailAddress:hover {
         border-bottom: 1px solid #21404f;
         opacity: 0.5; }
-      .blogMain .comments .name:focus, .blogMain .comments .emailAddress:focus {
+      .blogMain .comments .name:focus, .blogMain .comments form .emailAddress:focus, form .blogMain .comments .emailAddress:focus {
         border-bottom: 1px solid #21404f;
         color: #111211; }
       @media (max-width: 720px) {
-        .blogMain .comments .name, .blogMain .comments .emailAddress {
+        .blogMain .comments .name, .blogMain .comments form .emailAddress, form .blogMain .comments .emailAddress {
           font-size: 0.7rem; } }
-      @media (max-width: 560px) {
-        .blogMain .comments .name, .blogMain .comments .emailAddress {
-          width: 100%; } }
-      @media (max-width: 420px) {
-        .blogMain .comments .name, .blogMain .comments .emailAddress {
-          padding: 20px 10px 15px 10px; } }
-    .blogMain .comments .comment {
-      resize: none;
-      margin-top: 30px;
-      padding: 20px 0 15px 20px;
-      width: 100%;
+    .blogMain .comments .message {
       color: #111211;
-      background: none;
-      border: 1px solid #0CADC0;
-      -webkit-transition: opacity 0.3s;
-      -o-transition: opacity 0.3s;
-      transition: opacity 0.3s;
       font-size: 0.8rem; }
-      .blogMain .comments .comment:hover {
+      .blogMain .comments .message:hover {
         border: 1px solid #21404f;
         opacity: 0.5; }
-      .blogMain .comments .comment:focus {
+      .blogMain .comments .message:focus {
         border-bottom: 1px solid #21404f;
         color: #111211; }
       @media (max-width: 720px) {
-        .blogMain .comments .comment {
+        .blogMain .comments .message {
           font-size: 0.7rem; } }
-      @media (max-width: 420px) {
-        .blogMain .comments .comment {
-          padding: 20px 10px 15px 10px; } }
     .blogMain .comments .submit {
-      font-family: 'Pacifico', cursive;
-      font-size: 1rem;
-      color: #21404f;
-      margin-top: 30px;
       padding: 5px 0;
       background: #21404f;
       color: #FFFFFF;
-      width: 100%;
-      border: none;
       -webkit-transition: text-shadow 0.8s, background 0.3s;
       -o-transition: text-shadow 0.8s, background 0.3s;
       transition: text-shadow 0.8s, background 0.3s; }

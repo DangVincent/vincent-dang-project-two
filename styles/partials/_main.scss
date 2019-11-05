@@ -183,7 +183,7 @@
             font-size: 1rem;
             color: $accentColour;
             background: $secondaryColour;
-            transition: bottom 0.3s ease-in-out, box-shadow 0.3s ease-in-out, color 0.5s ease-in-out, background 0.6s ease-in-out;
+            transition: bottom 0.3s ease-in-out, box-shadow 0.3s ease-in-out, color 0.5s ease-in-out;
             &:hover {
                 position: relative;
                 bottom: 5px;
@@ -409,22 +409,12 @@
             width: 90%;
         }
         form {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
             @media (max-width: 560px) {
                 font-size: 0.7rem;
-                flex-direction: column;
             }
         }
         .name {
-            padding: 20px 0 15px 20px;
-            width: 45%;
-            background: none;
-            border: none;
-            border-bottom: 1px solid $secondaryColour;
             color: $accentColour;
-            transition: opacity 0.3s;
             &:hover {
                 border-bottom: 1px solid $tertiaryColour;
                 opacity: 0.5;
@@ -433,25 +423,9 @@
                 border-bottom: 1px solid $secondaryColour;
                 color: $accentColour;
             }
-            @media (max-width: 560px) {
-                width: 100%;
-            }
-            @media (max-width: 420px) {
-                padding: 20px 10px 15px 10px;
-            }
-        }
-        .emailAddress {
-            @extend .name;
         }
         .message {
-            resize: none;
-            margin-top: 30px;
-            padding: 20px 0 15px 20px;
-            width: 100%;
             color: $accentColour;
-            background: none;
-            border: 1px solid $secondaryColour;
-            transition: opacity 0.3s;
             &:hover {
                 border: 1px solid $tertiaryColour;
                 opacity: 0.5;
@@ -460,21 +434,14 @@
                 border-bottom: 1px solid $secondaryColour;
                 color: $accentColour;
             }
-            @media (max-width: 420px) {
-                padding: 20px 10px 15px 10px;
-            }
         }
         .submit {
-            @include fontSize1(1rem);
-            margin-top: 30px;
             background: $tertiaryColour;
-            width: 100%;
-            border: none;
             transition: text-shadow 0.8s, background 0.3s, color 0.3s;
             &:hover {
+                color: $accentColour;
                 text-shadow: 2px 2px 1px $primaryColour;
                 background: $secondaryColour;
-                color: $accentColour;
             }
             @media (max-width: 560px) {
                 font-size: 0.7rem;
@@ -739,9 +706,6 @@
         }
         form {
             width: 80%;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
             @media (max-width: 960px) {
                 width: 100%;
             }
@@ -753,13 +717,7 @@
             }
         }
         .name {
-            padding: 20px 0 15px 20px;
-            width: 45%;
-            background: none;
-            border: none;
-            border-bottom: 1px solid $secondaryColour;
             color: $quaternaryColour;
-            transition: opacity 0.3s;
             font-size: 0.8rem;
             &:hover {
                 border-bottom: 1px solid $primaryColour;
@@ -772,25 +730,9 @@
             @media (max-width: 720px) {
                 font-size: 0.7rem;
             }
-            @media (max-width: 560px) {
-                width: 100%;
-            }
-            @media (max-width: 420px) {
-                padding: 20px 10px 15px 10px;
-            }
         }
-        .emailAddress {
-            @extend .name;
-        }
-        .comment {
-            resize: none;
-            margin-top: 30px;
-            padding: 20px 0 15px 20px;
-            width: 100%;
+        .message {
             color: $quaternaryColour;
-            background: none;
-            border: 1px solid $secondaryColour;
-            transition: opacity 0.3s;
             font-size: 0.8rem;
             &:hover {
                 border: 1px solid $primaryColour;
@@ -803,18 +745,11 @@
             @media (max-width: 720px) {
                 font-size: 0.7rem;
             }
-            @media (max-width: 420px) {
-                padding: 20px 10px 15px 10px;
-            }
         }
         .submit {
-            @include fontSize1(1rem);
-            margin-top: 30px;
             padding: 5px 0;
             background: $primaryColour;
             color: $accentColour;
-            width: 100%;
-            border: none;
             transition: text-shadow 0.8s, background 0.3s;
             &:hover {
                 text-shadow: 2px 2px 1px $primaryColour;

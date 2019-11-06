@@ -14,7 +14,10 @@
     @media (max-width: 445px) {
         min-height: 280px;
     }
-    h2 {
+    h1 {
+        @include fontSize1(2.9rem);
+        line-height: 68px;
+        flex: 2 0 auto;
         margin-top: 60px;
         width: 60%;
         @media (max-width: 1003px) {
@@ -48,6 +51,17 @@
     }
 }
 //Home Header styles ends here
+.contactHeader,
+.blogHeader {
+    h1 {
+        @include fontSize1(3.4rem);
+        line-height: 64px;
+        flex: 2 0 auto;
+        @media (max-width: 375px) {
+            font-size: 3rem;
+        }
+    }
+}
 //Contact Header styles starts here
 .contactHeader {
     background: url(../assets/contact-header.jpg) center right no-repeat;

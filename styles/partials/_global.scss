@@ -19,36 +19,15 @@
 html {
     font-size: 125%;
 }
-h1 {
-    @include fontSize1(3.4rem);
-    line-height: 64px;
-    flex: 2 0 auto;
-    @media (max-width: 375px) {
-        font-size: 3rem;
-    }
-}
 h2 {
-    @include fontSize1(2.9rem);
-    line-height: 68px;
-    flex: 2 0 auto;
-}
-h3 {
     @include fontSize1(2.15rem);
     line-height: 58px;
     letter-spacing: 2.7px;
 }
-h4 {
-    @include fontSize1(2rem);
-    letter-spacing: 4.3px;
-}
-h5 {
+h3 {
     @include fontSize1(2rem);
     line-height: 58px;
     letter-spacing: 2.5px;
-}
-h6 {
-    @include fontSize1(1.3rem);
-    letter-spacing: 2.9px;
 }
 nav {
     @include fontSize3(1rem);

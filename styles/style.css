@@ -501,52 +501,19 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 html {
   font-size: 125%; }
 
-h1 {
-  font-family: 'Pacifico', cursive;
-  font-size: 3.4rem;
-  color: #21404f;
-  line-height: 64px;
-  -webkit-box-flex: 2;
-  -ms-flex: 2 0 auto;
-  flex: 2 0 auto; }
-  @media (max-width: 375px) {
-    h1 {
-      font-size: 3rem; } }
-
 h2 {
-  font-family: 'Pacifico', cursive;
-  font-size: 2.9rem;
-  color: #21404f;
-  line-height: 68px;
-  -webkit-box-flex: 2;
-  -ms-flex: 2 0 auto;
-  flex: 2 0 auto; }
-
-h3 {
   font-family: 'Pacifico', cursive;
   font-size: 2.15rem;
   color: #21404f;
   line-height: 58px;
   letter-spacing: 2.7px; }
 
-h4 {
-  font-family: 'Pacifico', cursive;
-  font-size: 2rem;
-  color: #21404f;
-  letter-spacing: 4.3px; }
-
-h5 {
+h3 {
   font-family: 'Pacifico', cursive;
   font-size: 2rem;
   color: #21404f;
   line-height: 58px;
   letter-spacing: 2.5px; }
-
-h6 {
-  font-family: 'Pacifico', cursive;
-  font-size: 1.3rem;
-  color: #21404f;
-  letter-spacing: 2.9px; }
 
 nav {
   font-family: 'Lato', sans-serif;
@@ -667,25 +634,32 @@ form {
   @media (max-width: 445px) {
     .homeHeader {
       min-height: 280px; } }
-  .homeHeader h2 {
+  .homeHeader h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 2.9rem;
+    color: #21404f;
+    line-height: 68px;
+    -webkit-box-flex: 2;
+    -ms-flex: 2 0 auto;
+    flex: 2 0 auto;
     margin-top: 60px;
     width: 60%; }
     @media (max-width: 1003px) {
-      .homeHeader h2 {
+      .homeHeader h1 {
         width: 50%; } }
     @media (max-width: 810px) {
-      .homeHeader h2 {
+      .homeHeader h1 {
         font-size: 2rem;
         line-height: 50px; } }
     @media (max-width: 575px) {
-      .homeHeader h2 {
+      .homeHeader h1 {
         width: 70%; } }
     @media (max-width: 445px) {
-      .homeHeader h2 {
+      .homeHeader h1 {
         font-size: 1.5rem;
         line-height: 40px; } }
     @media (max-width: 405px) {
-      .homeHeader h2 {
+      .homeHeader h1 {
         width: 60%; } }
   .homeHeader .homeBoxHeaderImage {
     position: relative;
@@ -700,6 +674,20 @@ form {
     @media (max-width: 1060px) {
       .homeHeader .homeBoxHeaderImage {
         display: none; } }
+
+.contactHeader h1,
+.blogHeader h1 {
+  font-family: 'Pacifico', cursive;
+  font-size: 3.4rem;
+  color: #21404f;
+  line-height: 64px;
+  -webkit-box-flex: 2;
+  -ms-flex: 2 0 auto;
+  flex: 2 0 auto; }
+  @media (max-width: 375px) {
+    .contactHeader h1,
+    .blogHeader h1 {
+      font-size: 3rem; } }
 
 .contactHeader {
   background: url(../assets/contact-header.jpg) center right no-repeat;
@@ -913,20 +901,20 @@ form {
       @media (max-width: 610px) {
         .homeMain .newTechniquesContent .newTechniquesDescription {
           width: 90%; } }
-    .homeMain .newTechniquesContent h3 {
+    .homeMain .newTechniquesContent h2 {
       margin: 5px 0 10px; }
       @media (max-width: 1070px) {
-        .homeMain .newTechniquesContent h3 {
+        .homeMain .newTechniquesContent h2 {
           margin-top: 20px;
           font-size: 2rem; } }
       @media (max-width: 700px) {
-        .homeMain .newTechniquesContent h3 {
+        .homeMain .newTechniquesContent h2 {
           font-size: 1.75rem; } }
       @media (max-width: 540px) {
-        .homeMain .newTechniquesContent h3 {
+        .homeMain .newTechniquesContent h2 {
           font-size: 1.2rem; } }
       @media (max-width: 325px) {
-        .homeMain .newTechniquesContent h3 {
+        .homeMain .newTechniquesContent h2 {
           line-height: 30px; } }
     .homeMain .newTechniquesContent p {
       font-size: 0.8rem;
@@ -1092,13 +1080,13 @@ form {
         box-shadow: 0 6px 20px #111211;
         text-shadow: 2px 2px 1px #21404f;
         color: #CCEDFB; }
-    .homeMain .serviceInfoContent h3 {
+    .homeMain .serviceInfoContent h2 {
       margin: 0 0 20px; }
       @media (max-width: 1070px) {
-        .homeMain .serviceInfoContent h3 {
+        .homeMain .serviceInfoContent h2 {
           font-size: 1.75rem; } }
       @media (max-width: 540px) {
-        .homeMain .serviceInfoContent h3 {
+        .homeMain .serviceInfoContent h2 {
           font-size: 1.2rem;
           line-height: 40px; } }
     .homeMain .serviceInfoContent p {
@@ -1233,16 +1221,21 @@ form {
         .homeMain .featuredContent .featuredContentDescription {
           width: 80%;
           margin: 50px auto; } }
-    .homeMain .featuredContent h5 {
+    .homeMain .featuredContent h3 {
+      font-family: 'Pacifico', cursive;
+      font-size: 2rem;
+      color: #21404f;
+      line-height: 58px;
+      letter-spacing: 2.5px;
       color: #FFFFFF;
       margin: 0; }
       @media (max-width: 1070px) {
-        .homeMain .featuredContent h5 {
+        .homeMain .featuredContent h3 {
           font-size: 1.75rem;
           margin: 5px 0;
           line-height: 45px; } }
       @media (max-width: 640px) {
-        .homeMain .featuredContent h5 {
+        .homeMain .featuredContent h3 {
           font-size: 1.2rem;
           line-height: 30px; } }
     .homeMain .featuredContent p {
@@ -1577,14 +1570,18 @@ form {
     @media (max-width: 960px) {
       .blogMain .newsContent .recentPostDescription {
         margin-top: 50px; } }
-    .blogMain .newsContent h6 {
+    .blogMain .newsContent h4 {
+      font-family: 'Pacifico', cursive;
+      font-size: 1.3rem;
+      color: #21404f;
+      letter-spacing: 2.9px;
       color: #FFFFFF;
       margin: 5px 0 0; }
       @media (max-width: 960px) {
-        .blogMain .newsContent h6 {
+        .blogMain .newsContent h4 {
           text-align: center; } }
       @media (max-width: 360px) {
-        .blogMain .newsContent h6 {
+        .blogMain .newsContent h4 {
           font-size: 1.1rem; } }
     @media (max-width: 960px) {
       .blogMain .newsContent .recentPostsList {
@@ -1616,15 +1613,19 @@ form {
     @media (max-width: 360px) {
       .blogMain .comments {
         width: 90%; } }
-    .blogMain .comments h4 {
+    .blogMain .comments h3 {
+      font-family: 'Pacifico', cursive;
+      font-size: 2rem;
+      color: #21404f;
+      letter-spacing: 4.3px;
       text-transform: capitalize;
       margin: 0;
       color: #161515; }
       @media (max-width: 720px) {
-        .blogMain .comments h4 {
+        .blogMain .comments h3 {
           font-size: 1.75rem; } }
       @media (max-width: 360px) {
-        .blogMain .comments h4 {
+        .blogMain .comments h3 {
           font-size: 1.2rem; } }
     .blogMain .comments .userComment {
       display: -webkit-box;

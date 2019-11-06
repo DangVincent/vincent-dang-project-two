@@ -14,6 +14,18 @@
     @media (max-width: 445px) {
         min-height: 280px;
     }
+    .skipLink {
+      position: absolute;
+      left: -1000px;
+      top: 5px;
+      color: #000000;
+      text-align: center;
+    }
+    .skipLink:focus {
+      left: 0;
+      right: 0;
+      top: 0;
+    }
     h1 {
         @include fontSize1(2.9rem);
         line-height: 68px;

@@ -1,6 +1,7 @@
 // Home Main styles starts here
 .homeMain {
     background: $tertiaryColour;
+    overflow-x: hidden;
     .newTechniquesContent {
         padding: 200px 0 100px;
         @media (max-width: 1070px) {

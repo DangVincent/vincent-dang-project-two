@@ -847,7 +847,8 @@ form {
             text-shadow: 1px 2px 1px #0CADC0; }
 
 .homeMain {
-  background: #CCEDFB; }
+  background: #CCEDFB;
+  overflow-x: hidden; }
   .homeMain .newTechniquesContent {
     padding: 200px 0 100px; }
     @media (max-width: 1070px) {

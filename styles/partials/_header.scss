@@ -1,6 +1,6 @@
 //Home Header styles starts here
 .homeHeader {
-    background: url(../../assets/header-home.jpg) bottom no-repeat;
+    background: url(../assets/header-home.jpg) bottom no-repeat;
     min-height: 700px;
     @media (max-width: 1060px) {
         min-height: 400px;
@@ -50,7 +50,7 @@
 //Home Header styles ends here
 //Contact Header styles starts here
 .contactHeader {
-    background: url(../../assets/contact-header.jpg) center right no-repeat;
+    background: url(../assets/contact-header.jpg) center right no-repeat;
     min-height: 400px;
     h1 {
         @media (max-width: 375px) {
@@ -61,7 +61,7 @@
 //Contact Header styles ends here
 //Blog Header styles starts here
 .blogHeader {
-    background: url(../../assets/blog-header.jpg) right no-repeat;
+    background: url(../assets/blog-header.jpg) right no-repeat;
     min-height: 400px;
     @media (max-width: 960px) {
         min-height: 300px;

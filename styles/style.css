@@ -653,7 +653,7 @@ form {
     border: none; }
 
 .homeHeader {
-  background: url(../../assets/header-home.jpg) bottom no-repeat;
+  background: url(../assets/header-home.jpg) bottom no-repeat;
   min-height: 700px; }
   @media (max-width: 1060px) {
     .homeHeader {
@@ -702,14 +702,14 @@ form {
         display: none; } }
 
 .contactHeader {
-  background: url(../../assets/contact-header.jpg) center right no-repeat;
+  background: url(../assets/contact-header.jpg) center right no-repeat;
   min-height: 400px; }
   @media (max-width: 375px) {
     .contactHeader h1 {
       line-height: 90px; } }
 
 .blogHeader {
-  background: url(../../assets/blog-header.jpg) right no-repeat;
+  background: url(../assets/blog-header.jpg) right no-repeat;
   min-height: 400px; }
   @media (max-width: 960px) {
     .blogHeader {
@@ -1277,7 +1277,7 @@ form {
         .homeMain .featuredContent .readMore {
           font-size: 0.7rem; } }
   .homeMain .bannerContent {
-    background: url(../../assets/banner.jpg) center no-repeat;
+    background: url(../assets/banner.jpg) center no-repeat;
     background-size: cover;
     min-height: 500px;
     padding: 1px; }

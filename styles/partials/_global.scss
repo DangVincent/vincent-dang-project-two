@@ -80,16 +80,76 @@ form {
     @media (max-width: 560px) {
         flex-direction: column;
     }
-    .name {
-        padding: 20px 0 15px 20px;
+    .inputContainer:nth-child(1),
+    .inputContainer:nth-child(2) {
         width: 45%;
+        @media (max-width: 560px) {
+            width: 100%;
+        }
+    }
+    .inputContainer:nth-child(2) {
+        @media (max-width: 560px) {
+            margin-top: 20px;
+        }
+    }
+    .inputContainer:nth-child(3) {
+        label {
+            padding: 35px 6px;
+        }
+    }   
+    .inputContainer {
+        width: 100%;
+        position: relative;
+        overflow: hidden; 
+    }
+    .name,
+    .message {
+        position: relative;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        outline: 0;
+        &:focus {
+            padding: 8px 6px 20px 10px;
+            background: $accentColour;
+            @media (max-width: 560px) {
+                padding: 10px 10px 30px;
+            }
+        }
+        &:focus + label {
+            background: $secondaryColour;
+            color: $quaternaryColour;
+            font-size: 70%;
+            padding: 2px 6px;
+            top: 100%;
+            margin-top: -20px;
+            z-index: 2;
+        }
+    }
+    label {
+        text-transform: capitalize;
+        transition: // not padding
+            background 0.2s,
+            color 0.2s,
+            top 0.2s,
+            bottom 0.2s,
+            right 0.2s,
+            left 0.2s;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        color: #999;
+        padding: 8px 6px;
+    }
+    .name {
+        padding: 20px;
+        width: 100%;
         background: none;
         border: none;
         border-bottom: 1px solid $secondaryColour;
         transition: opacity 0.3s;
-        @media (max-width: 560px) {
-            width: 100%;
-        }
         @media (max-width: 420px) {
             padding: 20px 10px 15px 10px;
         }
@@ -98,13 +158,20 @@ form {
         @extend .name;
     }
     .message {
+        display: block;
         resize: none;
         margin-top: 30px;
-        padding: 20px 0 15px 20px;
+        padding: 20px;
         width: 100%;
         background: none;
         border: 1px solid $secondaryColour;
         transition: opacity 0.3s;
+        &:focus {
+            padding: 20px;
+            @media (max-width: 560px) {
+                padding: 10px 10px 30px;
+            }
+        }
         @media (max-width: 420px) {
             padding: 20px 10px 15px 10px;
         }

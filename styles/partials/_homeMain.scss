@@ -111,7 +111,6 @@
         .galleryImage {
             width: 31.5%;
             overflow: hidden;
-            box-shadow: 10px 12px 10px $quaternaryColour;
             @media (max-width: 880px) {
                 width: 40%;
             }
@@ -191,13 +190,6 @@
             color: $accentColour;
             background: $secondaryColour;
             transition: bottom 0.3s ease-in-out, box-shadow 0.3s ease-in-out, color 0.5s ease-in-out, text-shadow 0.5s ease-in-out;
-            &:hover {
-                position: relative;
-                bottom: 5px;
-                box-shadow: 0 6px 20px $quaternaryColour;
-                text-shadow: 2px 2px 1px $primaryColour;
-                color: $tertiaryColour;
-            }
         }
         h2 {
             margin: 0 0 20px;

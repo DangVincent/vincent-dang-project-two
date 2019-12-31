@@ -31,7 +31,7 @@
                         <a href="blog.html" class="hLink hvrUnderlineFromLeft">blog</a>
                     </li>
                     <li>
-                        <a href="contact.html" class="hLink hvrUnderlineFromLeft">contact</a>
+                        <a href="contact.html" class="hLink">contact</a>
                     </li>
                 </ul>
                 <button class="hamburger hamburgerEmphatic" type="button" aria-label="Menu" aria-controls="navigation" aria-expanded="false">
@@ -40,7 +40,7 @@
                   </span>
                 </button>
             </nav>
-            <h1 data-aos="fade-right" data-aos-easing="ease-in-sine" data-aos-once="true" data-aos-offset="200" data-aos-delay="200">Get in touch</h1>
+            <h1>Get in touch</h1>
         </div>
     </header>
     <!-- Header content ends here -->
@@ -48,15 +48,22 @@
     <main class="contactMain">
         <div class="wrapper">
             <!-- Customer Service content starts here -->
-            <section class="customerService" data-aos="zoom-in-right" data-aos-easing="ease-in-sine" data-aos-once="true" data-aos-offset="200" data-aos-delay="800">
+            <section class="customerService">
                 <form action="">
-                    <label for="name" class="visuallyHidden">Your name:</label>
-                    <input type="text" id="name" name="contact" class="name" placeholder="Name" value="Name">
+                    <div class="inputContainer">
+                        <input type="text" id="name" name="contact" class="name">
+                        <label for="name">your name</label>
+                    </div>
                     
-                    <label for="emailAddress" class="visuallyHidden">Your email address:</label>
-                    <input type="email" id="emailAddress" name="contact" class="emailAddress" placeholder="Email Address" value="Email Address">
+                    <div class="inputContainer">
+                        <input type="email" id="emailAddress" name="contact" class="emailAddress">
+                        <label for="emailAddress">your email address</label>
+                    </div>
                     
-                    <textarea name="contact" class="message" placeholder="Message" value="Message" cols="40" rows="6">Message</textarea>
+                    <div class="inputContainer">
+                        <textarea name="contact" id="message" class="message" value="Message" cols="40" rows="6"></textarea>
+                        <label for="message">your message</label>
+                    </div>
                     
                     <input type="submit" value="submit" class="submit">
                 </form>

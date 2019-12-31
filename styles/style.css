@@ -583,31 +583,86 @@ form {
       -webkit-box-direction: normal;
       -ms-flex-direction: column;
       flex-direction: column; } }
+  form .inputContainer:nth-child(1),
+  form .inputContainer:nth-child(2) {
+    width: 45%; }
+    @media (max-width: 560px) {
+      form .inputContainer:nth-child(1),
+      form .inputContainer:nth-child(2) {
+        width: 100%; } }
+  @media (max-width: 560px) {
+    form .inputContainer:nth-child(2) {
+      margin-top: 20px; } }
+  form .inputContainer:nth-child(3) label {
+    padding: 35px 6px; }
+  form .inputContainer {
+    width: 100%;
+    position: relative;
+    overflow: hidden; }
+  form .name, form .emailAddress,
+  form .message {
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    outline: 0; }
+    form .name:focus, form .emailAddress:focus,
+    form .message:focus {
+      padding: 8px 6px 20px 10px;
+      background: #FFFFFF; }
+      @media (max-width: 560px) {
+        form .name:focus, form .emailAddress:focus,
+        form .message:focus {
+          padding: 10px 10px 30px; } }
+    form .name:focus + label, form .emailAddress:focus + label,
+    form .message:focus + label {
+      background: #0CADC0;
+      color: #111211;
+      font-size: 70%;
+      padding: 2px 6px;
+      top: 100%;
+      margin-top: -20px;
+      z-index: 2; }
+  form label {
+    text-transform: capitalize;
+    -webkit-transition: background 0.2s, color 0.2s, top 0.2s, bottom 0.2s, right 0.2s, left 0.2s;
+    -o-transition: background 0.2s, color 0.2s, top 0.2s, bottom 0.2s, right 0.2s, left 0.2s;
+    transition: background 0.2s, color 0.2s, top 0.2s, bottom 0.2s, right 0.2s, left 0.2s;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: #999;
+    padding: 8px 6px; }
   form .name, form .emailAddress {
-    padding: 20px 0 15px 20px;
-    width: 45%;
+    padding: 20px;
+    width: 100%;
     background: none;
     border: none;
     border-bottom: 1px solid #0CADC0;
     -webkit-transition: opacity 0.3s;
     -o-transition: opacity 0.3s;
     transition: opacity 0.3s; }
-    @media (max-width: 560px) {
-      form .name, form .emailAddress {
-        width: 100%; } }
     @media (max-width: 420px) {
       form .name, form .emailAddress {
         padding: 20px 10px 15px 10px; } }
   form .message {
+    display: block;
     resize: none;
     margin-top: 30px;
-    padding: 20px 0 15px 20px;
+    padding: 20px;
     width: 100%;
     background: none;
     border: 1px solid #0CADC0;
     -webkit-transition: opacity 0.3s;
     -o-transition: opacity 0.3s;
     transition: opacity 0.3s; }
+    form .message:focus {
+      padding: 20px; }
+      @media (max-width: 560px) {
+        form .message:focus {
+          padding: 10px 10px 30px; } }
     @media (max-width: 420px) {
       form .message {
         padding: 20px 10px 15px 10px; } }
@@ -619,115 +674,9 @@ form {
     width: 100%;
     border: none; }
 
-.homeHeader {
-  background: url(../assets/header-home.jpg) bottom no-repeat;
-  min-height: 700px; }
-  @media (max-width: 1060px) {
-    .homeHeader {
-      min-height: 400px; } }
-  @media (max-width: 810px) {
-    .homeHeader {
-      background-position: 60%; } }
-  @media (max-width: 640px) {
-    .homeHeader {
-      background-position: 55%; } }
-  @media (max-width: 445px) {
-    .homeHeader {
-      min-height: 280px; } }
-  .homeHeader .skipLink {
-    position: absolute;
-    left: -1000px;
-    top: 5px;
-    color: #000000;
-    text-align: center; }
-  .homeHeader .skipLink:focus {
-    left: 0;
-    right: 0;
-    top: 0; }
-  .homeHeader h1 {
-    font-family: 'Pacifico', cursive;
-    font-size: 2.9rem;
-    color: #21404f;
-    line-height: 68px;
-    -webkit-box-flex: 2;
-    -ms-flex: 2 0 auto;
-    flex: 2 0 auto;
-    margin-top: 60px;
-    width: 60%; }
-    @media (max-width: 1003px) {
-      .homeHeader h1 {
-        width: 50%; } }
-    @media (max-width: 810px) {
-      .homeHeader h1 {
-        font-size: 2rem;
-        line-height: 50px; } }
-    @media (max-width: 575px) {
-      .homeHeader h1 {
-        width: 70%; } }
-    @media (max-width: 445px) {
-      .homeHeader h1 {
-        font-size: 1.5rem;
-        line-height: 40px; } }
-    @media (max-width: 405px) {
-      .homeHeader h1 {
-        width: 60%; } }
-  .homeHeader .homeBoxHeaderImage {
-    position: relative;
-    top: 100px;
-    right: 50px;
-    -webkit-transform: scale(1.3, 1.4);
-    -ms-transform: scale(1.3, 1.4);
-    transform: scale(1.3, 1.4);
-    width: 57%;
-    -o-object-fit: cover;
-    object-fit: cover; }
-    @media (max-width: 1060px) {
-      .homeHeader .homeBoxHeaderImage {
-        display: none; } }
-
-.contactHeader h1,
-.blogHeader h1 {
-  font-family: 'Pacifico', cursive;
-  font-size: 3.4rem;
-  color: #21404f;
-  line-height: 64px;
-  -webkit-box-flex: 2;
-  -ms-flex: 2 0 auto;
-  flex: 2 0 auto; }
-  @media (max-width: 375px) {
-    .contactHeader h1,
-    .blogHeader h1 {
-      font-size: 3rem; } }
-
-.contactHeader {
-  background: url(../assets/contact-header.jpg) center right no-repeat;
-  min-height: 400px; }
-  @media (max-width: 375px) {
-    .contactHeader h1 {
-      line-height: 90px; } }
-
-.blogHeader {
-  background: url(../assets/blog-header.jpg) right no-repeat;
-  min-height: 400px; }
-  @media (max-width: 960px) {
-    .blogHeader {
-      min-height: 300px; } }
-  @media (max-width: 810px) {
-    .blogHeader {
-      background-position: 60%; } }
-  @media (max-width: 630px) {
-    .blogHeader {
-      background-position: 40%; } }
-  @media (max-width: 470px) {
-    .blogHeader {
-      background-position: 30%; } }
-  .blogHeader h1 {
-    margin: 80px 0 0; }
-
 .blogHeader,
 .contactHeader,
 .homeHeader {
-  background-size: cover;
   padding-top: 10px; }
   .blogHeader .wrapper,
   .contactHeader .wrapper,
@@ -845,6 +794,117 @@ form {
           .contactHeader .wrapper .headerLinks .menu .hLink:hover,
           .homeHeader .wrapper .headerLinks .menu .hLink:hover {
             text-shadow: 1px 2px 1px #0CADC0; }
+
+.homeHeader {
+  background: url(../assets/header-home.jpg) bottom/cover no-repeat;
+  min-height: 700px; }
+  @media (max-width: 1060px) {
+    .homeHeader {
+      min-height: 400px; } }
+  @media (max-width: 810px) {
+    .homeHeader {
+      background-position: 60%; } }
+  @media (max-width: 640px) {
+    .homeHeader {
+      background-position: 55%; } }
+  @media (max-width: 445px) {
+    .homeHeader {
+      min-height: 280px; } }
+  .homeHeader .skipLink {
+    position: absolute;
+    left: -1000px;
+    top: 5px;
+    color: #000000;
+    text-align: center; }
+  .homeHeader .skipLink:focus {
+    left: 0;
+    right: 0;
+    top: 0; }
+  .homeHeader h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 2.9rem;
+    color: #21404f;
+    line-height: 68px;
+    -webkit-box-flex: 2;
+    -ms-flex: 2 0 auto;
+    flex: 2 0 auto;
+    margin-top: 60px;
+    width: 60%; }
+    @media (max-width: 1003px) {
+      .homeHeader h1 {
+        width: 50%; } }
+    @media (max-width: 810px) {
+      .homeHeader h1 {
+        font-size: 2rem;
+        line-height: 50px; } }
+    @media (max-width: 575px) {
+      .homeHeader h1 {
+        width: 70%; } }
+    @media (max-width: 445px) {
+      .homeHeader h1 {
+        font-size: 1.5rem;
+        line-height: 40px; } }
+    @media (max-width: 405px) {
+      .homeHeader h1 {
+        width: 60%; } }
+  .homeHeader .homeBoxHeaderImage {
+    position: relative;
+    top: 100px;
+    right: 50px;
+    -webkit-transform: scale(1.3, 1.4);
+    -ms-transform: scale(1.3, 1.4);
+    transform: scale(1.3, 1.4);
+    width: 57%;
+    -o-object-fit: cover;
+    object-fit: cover; }
+    @media (max-width: 1060px) {
+      .homeHeader .homeBoxHeaderImage {
+        display: none; } }
+  .homeHeader .menu li:first-child {
+    border-bottom: 2px solid #0CADC0; }
+
+.contactHeader h1,
+.blogHeader h1 {
+  font-family: 'Pacifico', cursive;
+  font-size: 3.4rem;
+  color: #21404f;
+  line-height: 64px;
+  -webkit-box-flex: 2;
+  -ms-flex: 2 0 auto;
+  flex: 2 0 auto; }
+  @media (max-width: 375px) {
+    .contactHeader h1,
+    .blogHeader h1 {
+      font-size: 3rem; } }
+
+.contactHeader {
+  background: url(../assets/contact-header.jpg) center right/cover no-repeat;
+  min-height: 400px; }
+  @media (max-width: 375px) {
+    .contactHeader h1 {
+      line-height: 90px; } }
+  .contactHeader .menu li:nth-child(4) {
+    border-bottom: 2px solid #0CADC0; }
+
+.blogHeader {
+  background: url(../assets/blog-header.jpg) right/cover no-repeat;
+  min-height: 400px; }
+  @media (max-width: 960px) {
+    .blogHeader {
+      min-height: 300px; } }
+  @media (max-width: 810px) {
+    .blogHeader {
+      background-position: 60%; } }
+  @media (max-width: 630px) {
+    .blogHeader {
+      background-position: 40%; } }
+  @media (max-width: 470px) {
+    .blogHeader {
+      background-position: 30%; } }
+  .blogHeader h1 {
+    margin: 80px 0 0; }
+  .blogHeader .menu li:nth-child(3) {
+    border-bottom: 2px solid #0CADC0; }
 
 .homeMain {
   background: #CCEDFB;
@@ -979,9 +1039,7 @@ form {
           align-items: center; } }
     .homeMain .galleryContent .galleryImage {
       width: 31.5%;
-      overflow: hidden;
-      -webkit-box-shadow: 10px 12px 10px #111211;
-      box-shadow: 10px 12px 10px #111211; }
+      overflow: hidden; }
       @media (max-width: 880px) {
         .homeMain .galleryContent .galleryImage {
           width: 40%; } }
@@ -1084,13 +1142,6 @@ form {
       -o-transition: bottom 0.3s ease-in-out, box-shadow 0.3s ease-in-out, color 0.5s ease-in-out, text-shadow 0.5s ease-in-out;
       transition: bottom 0.3s ease-in-out, box-shadow 0.3s ease-in-out, color 0.5s ease-in-out, text-shadow 0.5s ease-in-out;
       transition: bottom 0.3s ease-in-out, box-shadow 0.3s ease-in-out, color 0.5s ease-in-out, text-shadow 0.5s ease-in-out, -webkit-box-shadow 0.3s ease-in-out; }
-      .homeMain .serviceInfoContent .serviceIcon:hover {
-        position: relative;
-        bottom: 5px;
-        -webkit-box-shadow: 0 6px 20px #111211;
-        box-shadow: 0 6px 20px #111211;
-        text-shadow: 2px 2px 1px #21404f;
-        color: #CCEDFB; }
     .homeMain .serviceInfoContent h2 {
       margin: 0 0 20px; }
       @media (max-width: 1070px) {
@@ -1379,19 +1430,17 @@ form {
     .contactMain .customerService .name, .contactMain .customerService form .emailAddress, form .contactMain .customerService .emailAddress {
       color: #FFFFFF; }
       .contactMain .customerService .name:hover, .contactMain .customerService form .emailAddress:hover, form .contactMain .customerService .emailAddress:hover {
-        border-bottom: 1px solid #CCEDFB;
-        opacity: 0.5; }
+        border-bottom: 1px solid #CCEDFB; }
       .contactMain .customerService .name:focus, .contactMain .customerService form .emailAddress:focus, form .contactMain .customerService .emailAddress:focus {
         border-bottom: 1px solid #0CADC0;
-        color: #FFFFFF; }
+        color: #111211; }
     .contactMain .customerService .message {
       color: #FFFFFF; }
       .contactMain .customerService .message:hover {
-        border: 1px solid #CCEDFB;
-        opacity: 0.5; }
+        border: 1px solid #CCEDFB; }
       .contactMain .customerService .message:focus {
         border-bottom: 1px solid #0CADC0;
-        color: #FFFFFF; }
+        color: #111211; }
     .contactMain .customerService .submit {
       background: #CCEDFB;
       color: #161515;
@@ -1423,7 +1472,7 @@ form {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center; }
-    @media (max-width: 720px) {
+    @media (max-width: 1110px) {
       .contactMain .contactInfo {
         width: 85%;
         -ms-flex-item-align: initial;
@@ -1438,7 +1487,7 @@ form {
       -ms-flex-pack: justify;
       justify-content: space-between;
       width: 60%; }
-      @media (max-width: 720px) {
+      @media (max-width: 1110px) {
         .contactMain .contactInfo ul {
           width: 100%;
           -webkit-box-pack: space-evenly;
@@ -1455,7 +1504,7 @@ form {
       color: #161515; }
       .contactMain .contactInfo p:nth-of-type(1) {
         margin: 10px 0; }
-      @media (max-width: 720px) {
+      @media (max-width: 1110px) {
         .contactMain .contactInfo p {
           font-size: 0.8rem;
           line-height: 22px;
@@ -1760,8 +1809,7 @@ form {
       color: #111211;
       font-size: 0.8rem; }
       .blogMain .comments .name:hover, .blogMain .comments form .emailAddress:hover, form .blogMain .comments .emailAddress:hover {
-        border-bottom: 1px solid #21404f;
-        opacity: 0.5; }
+        border-bottom: 1px solid #21404f; }
       .blogMain .comments .name:focus, .blogMain .comments form .emailAddress:focus, form .blogMain .comments .emailAddress:focus {
         border-bottom: 1px solid #21404f;
         color: #111211; }
@@ -1772,8 +1820,7 @@ form {
       color: #111211;
       font-size: 0.8rem; }
       .blogMain .comments .message:hover {
-        border: 1px solid #21404f;
-        opacity: 0.5; }
+        border: 1px solid #21404f; }
       .blogMain .comments .message:focus {
         border-bottom: 1px solid #21404f;
         color: #111211; }

@@ -295,7 +295,6 @@
             font-size: 0.8rem;
             &:hover {
                 border-bottom: 1px solid $primaryColour;
-                opacity: 0.5;
             }
             &:focus {
                 border-bottom: 1px solid $primaryColour;
@@ -310,7 +309,6 @@
             font-size: 0.8rem;
             &:hover {
                 border: 1px solid $primaryColour;
-                opacity: 0.5;
             }
             &:focus {
                 border-bottom: 1px solid $primaryColour;

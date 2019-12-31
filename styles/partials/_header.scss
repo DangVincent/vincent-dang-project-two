@@ -1,116 +1,7 @@
-//Home Header styles starts here
-.homeHeader {
-    background: url(../assets/header-home.jpg) bottom no-repeat;
-    min-height: 700px;
-    @media (max-width: 1060px) {
-        min-height: 400px;
-    }
-    @media (max-width: 810px) {
-        background-position: 60%;
-    }
-    @media (max-width: 640px) {
-        background-position: 55%;
-    }
-    @media (max-width: 445px) {
-        min-height: 280px;
-    }
-    .skipLink {
-      position: absolute;
-      left: -1000px;
-      top: 5px;
-      color: #000000;
-      text-align: center;
-    }
-    .skipLink:focus {
-      left: 0;
-      right: 0;
-      top: 0;
-    }
-    h1 {
-        @include fontSize1(2.9rem);
-        line-height: 68px;
-        flex: 2 0 auto;
-        margin-top: 60px;
-        width: 60%;
-        @media (max-width: 1003px) {
-            width: 50%;
-        }
-        @media (max-width: 810px) {
-            font-size: 2rem;
-            line-height: 50px;
-        }
-        @media (max-width: 575px) {
-            width: 70%;
-        }
-        @media (max-width: 445px) {
-            font-size: 1.5rem;
-            line-height: 40px;
-        }
-        @media (max-width: 405px) {
-            width: 60%;
-        }
-    }
-    .homeBoxHeaderImage {
-        position: relative;
-        top: 100px;
-        right: 50px;
-        transform: scale(1.3, 1.4);
-        width: 57%;
-        object-fit: cover;
-        @media (max-width: 1060px) {
-            display: none;
-        }
-    }
-}
-//Home Header styles ends here
-.contactHeader,
-.blogHeader {
-    h1 {
-        @include fontSize1(3.4rem);
-        line-height: 64px;
-        flex: 2 0 auto;
-        @media (max-width: 375px) {
-            font-size: 3rem;
-        }
-    }
-}
-//Contact Header styles starts here
-.contactHeader {
-    background: url(../assets/contact-header.jpg) center right no-repeat;
-    min-height: 400px;
-    h1 {
-        @media (max-width: 375px) {
-        line-height: 90px;
-        }
-    }
-}
-//Contact Header styles ends here
-//Blog Header styles starts here
-.blogHeader {
-    background: url(../assets/blog-header.jpg) right no-repeat;
-    min-height: 400px;
-    @media (max-width: 960px) {
-        min-height: 300px;
-    }
-    @media (max-width: 810px) {
-        background-position: 60%;
-    }
-    @media (max-width: 630px) {
-        background-position: 40%;
-    }
-    @media (max-width: 470px) {
-        background-position: 30%;
-    }
-    h1 {
-        margin: 80px 0 0;
-    } 
-}
-//Blog Header styles ends here
 //General styles for all headers starts here
 .blogHeader,
 .contactHeader,
 .homeHeader {
-    background-size: cover;
     padding-top: 10px;
     .wrapper {
         display: flex;
@@ -185,3 +76,126 @@
     }
 }
 //General styles for all headers ends here
+//Home Header styles starts here
+.homeHeader {
+    background: url(../assets/header-home.jpg) bottom/cover no-repeat;
+    min-height: 700px;
+    @media (max-width: 1060px) {
+        min-height: 400px;
+    }
+    @media (max-width: 810px) {
+        background-position: 60%;
+    }
+    @media (max-width: 640px) {
+        background-position: 55%;
+    }
+    @media (max-width: 445px) {
+        min-height: 280px;
+    }
+    .skipLink {
+      position: absolute;
+      left: -1000px;
+      top: 5px;
+      color: #000000;
+      text-align: center;
+    }
+    .skipLink:focus {
+      left: 0;
+      right: 0;
+      top: 0;
+    }
+    h1 {
+        @include fontSize1(2.9rem);
+        line-height: 68px;
+        flex: 2 0 auto;
+        margin-top: 60px;
+        width: 60%;
+        @media (max-width: 1003px) {
+            width: 50%;
+        }
+        @media (max-width: 810px) {
+            font-size: 2rem;
+            line-height: 50px;
+        }
+        @media (max-width: 575px) {
+            width: 70%;
+        }
+        @media (max-width: 445px) {
+            font-size: 1.5rem;
+            line-height: 40px;
+        }
+        @media (max-width: 405px) {
+            width: 60%;
+        }
+    }
+    .homeBoxHeaderImage {
+        position: relative;
+        top: 100px;
+        right: 50px;
+        transform: scale(1.3, 1.4);
+        width: 57%;
+        object-fit: cover;
+        @media (max-width: 1060px) {
+            display: none;
+        }
+    }
+    .menu{
+        li:first-child {
+            border-bottom: 2px solid $secondaryColour;
+        }
+    }
+}
+//Home Header styles ends here
+.contactHeader,
+.blogHeader {
+    h1 {
+        @include fontSize1(3.4rem);
+        line-height: 64px;
+        flex: 2 0 auto;
+        @media (max-width: 375px) {
+            font-size: 3rem;
+        }
+    }
+}
+//Contact Header styles starts here
+.contactHeader {
+    background: url(../assets/contact-header.jpg) center right/cover no-repeat;
+    min-height: 400px;
+    h1 {
+        @media (max-width: 375px) {
+        line-height: 90px;
+        }
+    }
+    .menu{
+        li:nth-child(4) {
+            border-bottom: 2px solid $secondaryColour;
+        }
+    }
+}
+//Contact Header styles ends here
+//Blog Header styles starts here
+.blogHeader {
+    background: url(../assets/blog-header.jpg) right/cover no-repeat;
+    min-height: 400px;
+    @media (max-width: 960px) {
+        min-height: 300px;
+    }
+    @media (max-width: 810px) {
+        background-position: 60%;
+    }
+    @media (max-width: 630px) {
+        background-position: 40%;
+    }
+    @media (max-width: 470px) {
+        background-position: 30%;
+    }
+    h1 {
+        margin: 80px 0 0;
+    }
+    .menu{
+        li:nth-child(3) {
+            border-bottom: 2px solid $secondaryColour;
+        }
+    } 
+}
+//Blog Header styles ends here

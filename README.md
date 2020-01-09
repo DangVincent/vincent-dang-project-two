@@ -1,7 +1,7 @@
 # Welcome to Textilee
 [Live Demo](https://dangvincent.github.io/vincent-dang-project-two/)
 
-![Textilee App](https://i.imgur.com/zwG8tzf.jpg)
+![Textilee App](https://i.imgur.com/RX16Dk6.jpg)
 ## Description
 A multi-page PSD conversion that is fully responsive using Flexbox, Sass and Responsive Design. Designed by Juno College.
 ## Built With
